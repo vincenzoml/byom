@@ -1,6 +1,6 @@
 {
-  "name": "Stable Diffusion (example)",
-  "comment": "SD 1.5 with branch selector and shared base setup — BYOM seed example.",
+  "name": "Selector SD 1.5 Branch Test - Selected Image",
+  "comment": "",
   "elements": {
     "e18aaafb-8248-4157-bf08-b7990d55c594": {
       "name": "Negative Prompt",
@@ -323,9 +323,7 @@
       }
     }
   },
-  "name": "Selector SD 1.5 Branch Test - Selected Image",
   "tags": [],
-  "comment": "",
   "collapsed": true,
   "mtime": 1778136729714,
   "external": true
