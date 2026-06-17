@@ -174,7 +174,7 @@
           "description": "Prompt for the false branch.",
           "expression": {
             "value": {
-              "immediate": "studio product photo of a glossy red apple on a white seamless background",
+              "immediate": "studio product photo of a glossy green apple on a white seamless background",
               "type": "text"
             }
           }
