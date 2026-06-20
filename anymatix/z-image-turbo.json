@@ -1,4 +1,621 @@
 {
-  "name": "z-image turbo 1781643490549",
-  "elements": {}
+  "elements": {
+    "b97b878c-39cf-431a-bbf3-da716c02d402": {
+      "name": "Resolution Preset",
+      "label": "config",
+      "description": "Choose output size preset.",
+      "tags": [
+        "view:toolbar"
+      ],
+      "expression": {
+        "value": {
+          "immediate": "square_768",
+          "type": "start_resolution_preset"
+        }
+      },
+      "folded": true
+    },
+    "8c4d27fb-c0cc-4b5d-8eff-f196d78e23f6": {
+      "name": "square_512 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "512",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "15840318-a638-423d-b407-a2c61959f628": {
+      "name": "square_512 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "512",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "c689fb26-246d-4492-9969-6933f67a35fd": {
+      "name": "square_768 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "768",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "3b1eaeb1-e8d9-41fb-a528-4cd091b9d38a": {
+      "name": "square_768 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "768",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "f653b287-b839-4a99-8434-0b8d66550171": {
+      "name": "landscape_768_512 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "768",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "75ebc773-5444-44a8-b7e1-aadb7a3e9def": {
+      "name": "landscape_768_512 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "512",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "4e16f563-1804-4a40-9b55-a4750dedf5e1": {
+      "name": "portrait_512_768 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "512",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "664118a6-8061-42cd-84ee-825baaf9cb24": {
+      "name": "portrait_512_768 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "768",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "f3b25480-997c-4673-862a-8ceda2cf7c2e": {
+      "name": "square_1024 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "1024",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "e51f524d-5eac-4d55-b396-e8bb3394997b": {
+      "name": "square_1024 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "1024",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "e9290f3b-e2f2-4d79-9a40-4c39550c56f5": {
+      "name": "Is Square 512 Preset",
+      "label": "hidden",
+      "expression": {
+        "method": "ValueEquals",
+        "args": {
+          "value": "b97b878c-39cf-431a-bbf3-da716c02d402",
+          "expected": {
+            "value": {
+              "immediate": "square_512",
+              "type": "start_resolution_preset"
+            }
+          }
+        }
+      },
+      "folded": true
+    },
+    "0d5242f4-0f5e-4434-b842-108055e93250": {
+      "name": "Is Square 768 Preset",
+      "label": "hidden",
+      "expression": {
+        "method": "ValueEquals",
+        "args": {
+          "value": "b97b878c-39cf-431a-bbf3-da716c02d402",
+          "expected": {
+            "value": {
+              "immediate": "square_768",
+              "type": "start_resolution_preset"
+            }
+          }
+        }
+      },
+      "folded": true
+    },
+    "a7a5d4f4-dfd5-4869-b205-27af83f67ccf": {
+      "name": "Is Landscape 768 512 Preset",
+      "label": "hidden",
+      "expression": {
+        "method": "ValueEquals",
+        "args": {
+          "value": "b97b878c-39cf-431a-bbf3-da716c02d402",
+          "expected": {
+            "value": {
+              "immediate": "landscape_768_512",
+              "type": "start_resolution_preset"
+            }
+          }
+        }
+      },
+      "folded": true
+    },
+    "1be9b7f2-cba5-4eb6-b550-7b458013468d": {
+      "name": "Is Portrait 512 768 Preset",
+      "label": "hidden",
+      "expression": {
+        "method": "ValueEquals",
+        "args": {
+          "value": "b97b878c-39cf-431a-bbf3-da716c02d402",
+          "expected": {
+            "value": {
+              "immediate": "portrait_512_768",
+              "type": "start_resolution_preset"
+            }
+          }
+        }
+      },
+      "folded": true
+    },
+    "03ba4ef8-7e8e-478f-9398-d7900f8c761a": {
+      "name": "Select width (portrait_512_768)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "1be9b7f2-cba5-4eb6-b550-7b458013468d",
+          "on_false": "f3b25480-997c-4673-862a-8ceda2cf7c2e",
+          "on_true": "4e16f563-1804-4a40-9b55-a4750dedf5e1"
+        }
+      },
+      "folded": true
+    },
+    "957cd2c5-a6ce-42f6-b483-832acb5a973a": {
+      "name": "Select height (portrait_512_768)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "1be9b7f2-cba5-4eb6-b550-7b458013468d",
+          "on_false": "e51f524d-5eac-4d55-b396-e8bb3394997b",
+          "on_true": "664118a6-8061-42cd-84ee-825baaf9cb24"
+        }
+      },
+      "folded": true
+    },
+    "3d72a252-cc34-4523-8ebd-0ef64ef8209c": {
+      "name": "Select width (landscape_768_512)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "a7a5d4f4-dfd5-4869-b205-27af83f67ccf",
+          "on_false": "03ba4ef8-7e8e-478f-9398-d7900f8c761a",
+          "on_true": "f653b287-b839-4a99-8434-0b8d66550171"
+        }
+      },
+      "folded": true
+    },
+    "51edd8a6-5177-45f3-97dc-17ca7299dcb3": {
+      "name": "Select height (landscape_768_512)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "a7a5d4f4-dfd5-4869-b205-27af83f67ccf",
+          "on_false": "957cd2c5-a6ce-42f6-b483-832acb5a973a",
+          "on_true": "75ebc773-5444-44a8-b7e1-aadb7a3e9def"
+        }
+      },
+      "folded": true
+    },
+    "22d6437d-40f7-45e5-aa66-e194f58a3cf7": {
+      "name": "Select width (square_768)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "0d5242f4-0f5e-4434-b842-108055e93250",
+          "on_false": "3d72a252-cc34-4523-8ebd-0ef64ef8209c",
+          "on_true": "c689fb26-246d-4492-9969-6933f67a35fd"
+        }
+      },
+      "folded": true
+    },
+    "cc430ae0-a769-4c96-9e89-d71b9d801406": {
+      "name": "Select height (square_768)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "0d5242f4-0f5e-4434-b842-108055e93250",
+          "on_false": "51edd8a6-5177-45f3-97dc-17ca7299dcb3",
+          "on_true": "3b1eaeb1-e8d9-41fb-a528-4cd091b9d38a"
+        }
+      },
+      "folded": true
+    },
+    "9b7bfa49-9ae4-4b21-8c22-fd147bc16262": {
+      "name": "CLIP URL",
+      "label": "advanced",
+      "description": "Text encoder download URL.",
+      "expression": {
+        "value": {
+          "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+          "type": "url/text_encoders"
+        }
+      },
+      "folded": true
+    },
+    "dd0b8eb1-0044-4c08-a233-c39bddbbb015": {
+      "name": "Fetch CLIP",
+      "label": "advanced",
+      "description": "Download the text encoder.",
+      "expression": {
+        "method": "AnymatixFetcher",
+        "args": {
+          "url": "9b7bfa49-9ae4-4b21-8c22-fd147bc16262"
+        }
+      },
+      "folded": true
+    },
+    "cbe5921d-fe36-489a-8dcd-ab24980ecf3e": {
+      "name": "Load CLIP",
+      "label": "advanced",
+      "description": "Load the text encoder.",
+      "expression": {
+        "method": "AnymatixCLIPLoader",
+        "args": {
+          "clip_name": "dd0b8eb1-0044-4c08-a233-c39bddbbb015"
+        }
+      },
+      "folded": true
+    },
+    "f76c7715-d4d7-4ab4-acb5-5ca99842cfd5": {
+      "name": "VAE URL",
+      "label": "advanced",
+      "description": "VAE download URL.",
+      "expression": {
+        "value": {
+          "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
+          "type": "url/vae"
+        }
+      },
+      "folded": true
+    },
+    "38acef4f-d8cf-4452-9e21-d192cc7065f8": {
+      "name": "Fetch VAE",
+      "label": "advanced",
+      "description": "Download the VAE.",
+      "expression": {
+        "method": "AnymatixFetcher",
+        "args": {
+          "url": "f76c7715-d4d7-4ab4-acb5-5ca99842cfd5"
+        }
+      },
+      "folded": true
+    },
+    "cbfefa56-d8c4-4f6c-a1c3-9397fc67ea9a": {
+      "name": "Load VAE",
+      "label": "advanced",
+      "description": "Load the VAE.",
+      "expression": {
+        "method": "AnymatixVAELoader",
+        "args": {
+          "vae_name": "38acef4f-d8cf-4452-9e21-d192cc7065f8"
+        }
+      },
+      "folded": true
+    },
+    "7d6b384f-bc60-4ef1-884e-57a844bc56d6": {
+      "name": "Prompt",
+      "label": "basic",
+      "description": "Describe the image to create.",
+      "expression": {
+        "value": {
+          "immediate": "A captivating and ultra- realistic- style portrait of a trendy young man. He stands confidently against a graffiti- covered wall, wearing a cool minimalist hoodie with the bold text 'Anymatix!'. His stylish eyeglasses reflect the surrounding colors, while large headphones rest comfortably around her neck. The image exudes a sports poster vibe, blending a doodle art aesthetic with influences from glitch art. The composition is both dynamic and visually striking, capturing the essence of modern street culture with an authentic, lifelike quality. ",
+          "type": "text"
+        }
+      },
+      "folded": true
+    },
+    "90c0680a-a250-4d26-857e-1171e603c0df": {
+      "name": "Encode Prompt",
+      "label": "advanced",
+      "description": "Encode the prompt for sampling.",
+      "expression": {
+        "method": "CLIPTextEncode",
+        "args": {
+          "text": "7d6b384f-bc60-4ef1-884e-57a844bc56d6",
+          "clip": "cbe5921d-fe36-489a-8dcd-ab24980ecf3e"
+        }
+      },
+      "folded": true
+    },
+    "41675e9d-d1bb-4643-a30f-68ea28b5c691": {
+      "name": "Conditioning Zero Out",
+      "label": "advanced",
+      "description": "Create empty negative conditioning.",
+      "expression": {
+        "method": "ConditioningZeroOut",
+        "args": {
+          "conditioning": "90c0680a-a250-4d26-857e-1171e603c0df"
+        }
+      },
+      "folded": true
+    },
+    "e827a2f0-cb6a-4f7c-8d9f-aa408585ccf0": {
+      "name": "Model URL",
+      "label": "advanced",
+      "description": "Diffusion model download URL.",
+      "tags": [
+        "base:z-image"
+      ],
+      "expression": {
+        "value": {
+          "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors",
+          "type": "url/diffusion_model"
+        }
+      },
+      "folded": true
+    },
+    "8db31b08-46c8-4d45-affc-d2b2fde6f8b3": {
+      "name": "Fetch Model",
+      "label": "advanced",
+      "description": "Download the diffusion model.",
+      "expression": {
+        "method": "AnymatixFetcher",
+        "args": {
+          "url": "e827a2f0-cb6a-4f7c-8d9f-aa408585ccf0"
+        }
+      },
+      "folded": true
+    },
+    "1ace9dcf-44c0-4dca-9af3-20db0bb77df6": {
+      "name": "Load Model",
+      "label": "advanced",
+      "description": "Load the diffusion model.",
+      "expression": {
+        "method": "AnymatixUNETLoader",
+        "args": {
+          "unet_name": "8db31b08-46c8-4d45-affc-d2b2fde6f8b3"
+        }
+      },
+      "folded": true
+    },
+    "dcf8aa8f-aba3-4655-9620-56c2b7ae75a7": {
+      "name": "Width",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "e9290f3b-e2f2-4d79-9a40-4c39550c56f5",
+          "on_false": "22d6437d-40f7-45e5-aa66-e194f58a3cf7",
+          "on_true": "8c4d27fb-c0cc-4b5d-8eff-f196d78e23f6"
+        }
+      },
+      "folded": true
+    },
+    "7b38f200-ac99-46b4-a94d-08d4d9367b16": {
+      "name": "Height",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "e9290f3b-e2f2-4d79-9a40-4c39550c56f5",
+          "on_false": "cc430ae0-a769-4c96-9e89-d71b9d801406",
+          "on_true": "15840318-a638-423d-b407-a2c61959f628"
+        }
+      },
+      "folded": true
+    },
+    "ffa5f05a-0f5a-4506-92aa-e285d65ab8f8": {
+      "name": "Batch Size",
+      "label": "advanced",
+      "description": "Number of images to generate.",
+      "expression": {
+        "value": {
+          "immediate": "1",
+          "type": "count"
+        }
+      },
+      "folded": true
+    },
+    "3dfbd031-8b77-49bd-89ce-fc4bd535183f": {
+      "name": "Empty SD3 Latent Image",
+      "label": "advanced",
+      "description": "Create the starting latent image.",
+      "expression": {
+        "method": "EmptySD3LatentImage",
+        "args": {
+          "width": "dcf8aa8f-aba3-4655-9620-56c2b7ae75a7",
+          "height": "7b38f200-ac99-46b4-a94d-08d4d9367b16",
+          "batch_size": "ffa5f05a-0f5a-4506-92aa-e285d65ab8f8"
+        }
+      },
+      "folded": true
+    },
+    "8c3de44a-9e0f-46c6-99e1-cec6e2eabbc5": {
+      "name": "Shift",
+      "label": "advanced",
+      "description": "Sampling shift for this model.",
+      "expression": {
+        "value": {
+          "immediate": "3",
+          "type": "number"
+        }
+      },
+      "folded": true
+    },
+    "f8fec007-bdcb-4137-8e97-2399a82f02aa": {
+      "name": "Apply Model Sampling",
+      "label": "advanced",
+      "description": "Apply model-specific sampling settings.",
+      "expression": {
+        "method": "ModelSamplingAuraFlow",
+        "args": {
+          "model": "1ace9dcf-44c0-4dca-9af3-20db0bb77df6",
+          "shift": "8c3de44a-9e0f-46c6-99e1-cec6e2eabbc5"
+        }
+      },
+      "folded": true
+    },
+    "529553c8-2aed-4344-b0de-94b800ea255d": {
+      "name": "Seed",
+      "label": "config",
+      "description": "Controls random variation.",
+      "expression": {
+        "value": {
+          "immediate": "3235012591",
+          "type": "seed"
+        }
+      },
+      "folded": true
+    },
+    "26f72ece-0759-4454-9839-9cc22e3d68b1": {
+      "name": "Steps",
+      "label": "config",
+      "description": "Number of sampling steps.",
+      "expression": {
+        "value": {
+          "immediate": "9",
+          "type": "count"
+        }
+      },
+      "folded": true
+    },
+    "1c29a00d-f785-441b-83a7-6994445c68b2": {
+      "name": "Guidance",
+      "label": "advanced",
+      "description": "Prompt guidance strength.",
+      "expression": {
+        "value": {
+          "immediate": "1",
+          "type": "cfg"
+        }
+      },
+      "folded": true
+    },
+    "ddbb9904-db86-484e-8ab2-53d518e3a2dd": {
+      "name": "Sampler",
+      "label": "advanced",
+      "description": "Sampling algorithm.",
+      "expression": {
+        "value": {
+          "immediate": "res_multistep",
+          "type": "sampler"
+        }
+      },
+      "folded": true
+    },
+    "60545fa5-4dea-49cc-8c07-1de275e25601": {
+      "name": "Scheduler",
+      "label": "advanced",
+      "description": "Sampling schedule.",
+      "expression": {
+        "value": {
+          "immediate": "simple",
+          "type": "scheduler"
+        }
+      },
+      "folded": true
+    },
+    "b69a8087-7f25-4543-b65d-f75e7a736bcd": {
+      "name": "Denoise",
+      "label": "advanced",
+      "description": "How strongly to redraw the latent.",
+      "expression": {
+        "value": {
+          "immediate": "1",
+          "type": "strength"
+        }
+      },
+      "folded": true
+    },
+    "5f87d228-1daf-4502-802a-dd28fc880b28": {
+      "name": "Sample Latents",
+      "label": "advanced",
+      "description": "Generate the image latents.",
+      "expression": {
+        "method": "KSampler",
+        "args": {
+          "model": "f8fec007-bdcb-4137-8e97-2399a82f02aa",
+          "positive": "90c0680a-a250-4d26-857e-1171e603c0df",
+          "negative": "41675e9d-d1bb-4643-a30f-68ea28b5c691",
+          "latent_image": "3dfbd031-8b77-49bd-89ce-fc4bd535183f",
+          "seed": "529553c8-2aed-4344-b0de-94b800ea255d",
+          "steps": "26f72ece-0759-4454-9839-9cc22e3d68b1",
+          "cfg": "1c29a00d-f785-441b-83a7-6994445c68b2",
+          "sampler_name": "ddbb9904-db86-484e-8ab2-53d518e3a2dd",
+          "scheduler": "60545fa5-4dea-49cc-8c07-1de275e25601",
+          "denoise": "b69a8087-7f25-4543-b65d-f75e7a736bcd"
+        }
+      },
+      "folded": true
+    },
+    "ee131759-35e0-42b6-a720-6b6104bae9b4": {
+      "name": "Image",
+      "label": "basic",
+      "description": "Generated image.",
+      "tags": [
+        "view:output"
+      ],
+      "expression": {
+        "method": "VAEDecode",
+        "args": {
+          "samples": "5f87d228-1daf-4502-802a-dd28fc880b28",
+          "vae": "cbfefa56-d8c4-4f6c-a1c3-9397fc67ea9a"
+        }
+      },
+      "folded": true
+    }
+  },
+  "name": "z-image turbo",
+  "tags": [
+    "quality:5",
+    "speed:5"
+  ],
+  "comment": "",
+  "mainTag": "library",
+  "default": false,
+  "collapsed": true,
+  "mtime": 1781957770463,
+  "external": true,
+  "libraryProject": "4f2986c3-d1b1-4a31-9173-f52c78ef91ad"
 }
