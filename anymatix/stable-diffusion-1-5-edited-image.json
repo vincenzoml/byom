@@ -1,6 +1,6 @@
 {
   "elements": {
-    "f7ebd87b-75fb-42f4-9a8c-c25b38a23451": {
+    "2894de8a-8936-41df-8115-67489c656e9b": {
       "name": "Image",
       "label": "basic",
       "description": "Input image.",
@@ -12,7 +12,7 @@
         }
       }
     },
-    "26294533-d03b-4fcd-9f33-c67f9f8f0309": {
+    "ca217af1-723c-4b3a-bb1f-090f4419770d": {
       "name": "Prompt",
       "label": "basic",
       "description": "Describe what to create.",
@@ -24,7 +24,7 @@
         }
       }
     },
-    "c5390542-63ea-4900-9ff1-34cdd2cf25bf": {
+    "38db23b3-2b5c-491d-b778-c7c680937adb": {
       "name": "Seed",
       "label": "config",
       "description": "Controls random variation.",
@@ -36,7 +36,7 @@
         }
       }
     },
-    "4158d989-38ca-48b0-9b89-bd3f7c18d888": {
+    "3431e28b-c296-4b90-8376-52daa8c98ae2": {
       "name": "Checkpoint",
       "label": "advanced",
       "folded": true,
@@ -47,7 +47,7 @@
         }
       }
     },
-    "d2086c1b-b91d-42fa-8fcb-36fac2899d44": {
+    "146642dd-1be5-4bd1-ba12-acc36efd7c0a": {
       "name": "Steps",
       "label": "config",
       "description": "Number of sampling steps.",
@@ -59,7 +59,7 @@
         }
       }
     },
-    "e78cf545-5db6-48f8-99c6-bbe84a86c929": {
+    "428c2f01-93dc-4d9b-bb99-a32fe27098ef": {
       "name": "Negative Prompt",
       "label": "config",
       "description": "Describe what to avoid.",
@@ -71,7 +71,7 @@
         }
       }
     },
-    "af8e0bf1-44ce-456a-bbab-71b2c017165c": {
+    "00a4c895-a546-4d98-8c74-4ee239da14bb": {
       "name": "Sampler",
       "label": "advanced",
       "folded": true,
@@ -82,7 +82,7 @@
         }
       }
     },
-    "dcfbbf68-bee1-4d70-a1bf-5baec2fb0d3f": {
+    "08e6bfd2-b717-4ec3-bebe-5da8b4ff3b25": {
       "name": "Scheduler",
       "label": "advanced",
       "folded": true,
@@ -93,7 +93,7 @@
         }
       }
     },
-    "475caf54-3115-4f52-89be-3a3f0dc5d910": {
+    "881f39a2-8b99-47c6-a500-66808264b5e1": {
       "name": "Guidance",
       "label": "advanced",
       "folded": true,
@@ -104,7 +104,7 @@
         }
       }
     },
-    "3861c93e-aab3-42b9-838c-9638a85efc0b": {
+    "4fdccb52-7cd7-4b79-a3e7-1351e7754069": {
       "name": "Strength",
       "label": "advanced",
       "folded": true,
@@ -115,97 +115,97 @@
         }
       }
     },
-    "fda1b14f-0aa3-4838-b600-65743213d759": {
+    "63cc269a-98c5-4669-b4fa-175429482fe2": {
       "name": "Download Checkpoint",
       "label": "advanced",
       "folded": true,
       "expression": {
         "method": "AnymatixFetcher",
         "args": {
-          "url": "4158d989-38ca-48b0-9b89-bd3f7c18d888"
+          "url": "3431e28b-c296-4b90-8376-52daa8c98ae2"
         }
       }
     },
-    "93cb9017-7ee5-4125-8283-f72db54af095": {
+    "a0a09729-51b5-49ba-a9eb-e7edebceeff2": {
       "name": "Load Checkpoint",
       "label": "advanced",
       "folded": true,
       "expression": {
         "method": "AnymatixCheckpointLoader",
         "args": {
-          "ckpt_name": "fda1b14f-0aa3-4838-b600-65743213d759"
+          "ckpt_name": "63cc269a-98c5-4669-b4fa-175429482fe2"
         }
       }
     },
-    "50a97c90-4b68-4ab7-b705-dc0dd269862a": {
+    "afa4532e-7c1f-4b0e-9bcf-3f244b4be2de": {
       "name": "Encode Positive Prompt",
       "label": "advanced",
       "folded": true,
       "expression": {
         "method": "CLIPTextEncode",
         "args": {
-          "text": "26294533-d03b-4fcd-9f33-c67f9f8f0309",
+          "text": "ca217af1-723c-4b3a-bb1f-090f4419770d",
           "clip": {
-            "id": "93cb9017-7ee5-4125-8283-f72db54af095",
+            "id": "a0a09729-51b5-49ba-a9eb-e7edebceeff2",
             "slot": 1
           }
         }
       }
     },
-    "cbcc6fb3-46fb-42ac-a67d-0807002f6e9f": {
+    "1077990b-8d3a-4b5b-89fa-8a33c9d7ee27": {
       "name": "Encode Negative Prompt",
       "label": "advanced",
       "folded": true,
       "expression": {
         "method": "CLIPTextEncode",
         "args": {
-          "text": "e78cf545-5db6-48f8-99c6-bbe84a86c929",
+          "text": "428c2f01-93dc-4d9b-bb99-a32fe27098ef",
           "clip": {
-            "id": "93cb9017-7ee5-4125-8283-f72db54af095",
+            "id": "a0a09729-51b5-49ba-a9eb-e7edebceeff2",
             "slot": 1
           }
         }
       }
     },
-    "874f3589-da0a-4333-8e0c-99e68ebc92df": {
+    "7c7c2e57-5e85-44ef-a562-277d5ccebc4a": {
       "name": "Encode Image",
       "label": "advanced",
       "folded": true,
       "expression": {
         "method": "VAEEncode",
         "args": {
-          "pixels": "f7ebd87b-75fb-42f4-9a8c-c25b38a23451",
+          "pixels": "2894de8a-8936-41df-8115-67489c656e9b",
           "vae": {
-            "id": "93cb9017-7ee5-4125-8283-f72db54af095",
+            "id": "a0a09729-51b5-49ba-a9eb-e7edebceeff2",
             "slot": 2
           }
         }
       }
     },
-    "04f4d335-ffd5-42b8-bd21-8cc9ecd86ecd": {
+    "1733309a-3474-4d8a-8df5-56e96089e7fd": {
       "name": "Sample Latents",
       "label": "advanced",
       "folded": true,
       "expression": {
         "method": "KSampler",
         "args": {
-          "positive": "50a97c90-4b68-4ab7-b705-dc0dd269862a",
-          "negative": "cbcc6fb3-46fb-42ac-a67d-0807002f6e9f",
-          "seed": "c5390542-63ea-4900-9ff1-34cdd2cf25bf",
+          "positive": "afa4532e-7c1f-4b0e-9bcf-3f244b4be2de",
+          "negative": "1077990b-8d3a-4b5b-89fa-8a33c9d7ee27",
+          "seed": "38db23b3-2b5c-491d-b778-c7c680937adb",
           "model": {
-            "id": "93cb9017-7ee5-4125-8283-f72db54af095",
+            "id": "a0a09729-51b5-49ba-a9eb-e7edebceeff2",
             "slot": 0
           },
-          "latent_image": "874f3589-da0a-4333-8e0c-99e68ebc92df",
-          "steps": "d2086c1b-b91d-42fa-8fcb-36fac2899d44",
-          "cfg": "475caf54-3115-4f52-89be-3a3f0dc5d910",
-          "sampler_name": "af8e0bf1-44ce-456a-bbab-71b2c017165c",
-          "scheduler": "dcfbbf68-bee1-4d70-a1bf-5baec2fb0d3f",
-          "denoise": "3861c93e-aab3-42b9-838c-9638a85efc0b"
+          "latent_image": "7c7c2e57-5e85-44ef-a562-277d5ccebc4a",
+          "steps": "146642dd-1be5-4bd1-ba12-acc36efd7c0a",
+          "cfg": "881f39a2-8b99-47c6-a500-66808264b5e1",
+          "sampler_name": "00a4c895-a546-4d98-8c74-4ee239da14bb",
+          "scheduler": "08e6bfd2-b717-4ec3-bebe-5da8b4ff3b25",
+          "denoise": "4fdccb52-7cd7-4b79-a3e7-1351e7754069"
         }
       }
     },
-    "a44c6e7a-2761-46ce-a392-48a088262d2e": {
+    "d21884a5-124d-476e-b517-de7d68f178db": {
       "name": "Edited Image",
       "label": "basic",
       "description": "Edited image.",
@@ -216,9 +216,9 @@
       "expression": {
         "method": "VAEDecode",
         "args": {
-          "samples": "04f4d335-ffd5-42b8-bd21-8cc9ecd86ecd",
+          "samples": "1733309a-3474-4d8a-8df5-56e96089e7fd",
           "vae": {
-            "id": "93cb9017-7ee5-4125-8283-f72db54af095",
+            "id": "a0a09729-51b5-49ba-a9eb-e7edebceeff2",
             "slot": 2
           }
         }
@@ -226,6 +226,7 @@
     }
   },
   "name": "Stable Diffusion 1.5 - Edited Image",
+  "comment": "",
   "collapsed": true,
-  "mtime": 1781669721004
+  "mtime": 1782283348463
 }
