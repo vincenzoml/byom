@@ -1,0 +1,2171 @@
+{
+  "elements": {
+    "8f51c634-8e5d-4cdf-a159-4ec67fbd0516": {
+      "elements": {
+        "6a2719f8-e466-4298-b1d5-972b0b3bfe9c": {
+          "name": "Prompt",
+          "label": "basic",
+          "description": "Describe the motion, action, camera movement, and audio to generate from the source image. Write the prompt as a clear chronological shot description with concrete visual details and sound cues.\n\n[Prompting guide: key elements](https://docs.ltx.video/open-source-model/usage-guides/prompting-guide#key-elements-to-include)\n[Prompting guide: best results](https://docs.ltx.video/open-source-model/usage-guides/prompting-guide#for-best-results)",
+          "expression": {
+            "value": {
+              "immediate": "futuristic clock spinning fast all symbols morphing glitch music ambient noise",
+              "type": "text"
+            }
+          },
+          "folded": true
+        },
+        "9826f311-6cb1-4c33-a506-f95c1ab6f59e": {
+          "name": "Reference Image",
+          "label": "basic",
+          "description": "Starting image used to anchor composition, identity, and framing.",
+          "tags": [
+            "view:output"
+          ],
+          "expression": {
+            "value": {
+              "hash": "8956650fff297f202bd7b0ef2ffc74057487b9e8eb3a74c2c28d55fb4663ef33",
+              "type": "image/png"
+            }
+          },
+          "folded": true
+        }
+      },
+      "name": "Input",
+      "collapsed": false,
+      "mtime": 1782341368949
+    },
+    "ffdf403a-df06-450b-af20-ee7fc8bc149e": {
+      "elements": {
+        "810ecf1f-3ec1-417b-a98e-e16e78f47500": {
+          "name": "Aspect Ratio",
+          "label": "hidden",
+          "description": "Legacy helper retained for compatibility.",
+          "expression": {
+            "value": {
+              "immediate": "landscape",
+              "type": "ltx23_aspect_ratio"
+            }
+          },
+          "folded": true
+        },
+        "7549d82e-54a9-4778-acfc-9dec434b7870": {
+          "name": "Mode",
+          "label": "config",
+          "description": "Choose the generation branch. Turbo is faster for iteration; Full is slower and intended for higher quality.",
+          "tags": [
+            "view:toolbar"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "turbo",
+              "type": "ltx23_mode"
+            }
+          },
+          "folded": true
+        },
+        "d3d93f85-1127-4453-9846-237c20083028": {
+          "name": "Resolution",
+          "label": "config",
+          "description": "Choose a preset output size. Higher resolutions need more VRAM, and dimensions must stay divisible by 32.\n\n[Official image-to-video guide: resolution](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#resolution)",
+          "tags": [
+            "view:toolbar"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "square_1_1",
+              "type": "ltx23_i2v_resolution_preset"
+            }
+          },
+          "folded": true
+        },
+        "1ef915c4-6e9f-4979-8908-fa441411c508": {
+          "name": "720p Landscape Width",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "1280",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "51623dc0-5bb1-4b80-bde2-2d3d07935979": {
+          "name": "720p Landscape Height",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "720",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "08ded2e0-0e03-45d6-b401-21e3181e9346": {
+          "name": "Fast 3:2 Width",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "768",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "1302209a-5681-4f7f-93dd-6aadc18ecf06": {
+          "name": "Fast 3:2 Height",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "512",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "0f6a2056-fff7-493e-b404-4d1f6c63e729": {
+          "name": "Square Width",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "640",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "d61438e3-36cd-452d-9798-334f7b90e31d": {
+          "name": "Square Height",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "640",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "94d9ed6a-b04c-49e2-8206-e5c8117e1923": {
+          "name": "1080p Landscape Width",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "1920",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "87a70d3b-6844-410d-aa45-3f8466d411b8": {
+          "name": "1080p Landscape Height",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "1080",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "2369f008-da6c-48bd-9daf-9e7832fe7a5c": {
+          "name": "1080p Portrait Width",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "1080",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "75fbaab4-2d45-47f0-8982-d6b9d5897e69": {
+          "name": "1080p Portrait Height",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "1920",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "f4a09f04-21c2-40ab-b770-60c349843e1a": {
+          "name": "1080p Square Width",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "1440",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "5bf45704-432b-40bd-bc1f-434380c2535c": {
+          "name": "1080p Square Height",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "1440",
+              "type": "resolution"
+            }
+          },
+          "folded": true
+        },
+        "ab651182-75f4-4d23-a25e-2de2df10227c": {
+          "name": "Is Vertical Preset",
+          "label": "hidden",
+          "expression": {
+            "method": "ValueEquals",
+            "args": {
+              "value": "d3d93f85-1127-4453-9846-237c20083028",
+              "expected": {
+                "value": {
+                  "immediate": "portrait_vertical",
+                  "type": "ltx23_i2v_resolution_preset"
+                }
+              }
+            }
+          },
+          "folded": true
+        },
+        "68a5502e-27a1-42d4-a08c-8bec53d869a1": {
+          "name": "Is Square Preset",
+          "label": "hidden",
+          "expression": {
+            "method": "ValueEquals",
+            "args": {
+              "value": "d3d93f85-1127-4453-9846-237c20083028",
+              "expected": {
+                "value": {
+                  "immediate": "square_1_1",
+                  "type": "ltx23_i2v_resolution_preset"
+                }
+              }
+            }
+          },
+          "folded": true
+        },
+        "51d55c45-1e48-4e1d-a7de-dda2c2f37905": {
+          "name": "Is Fast 3:2 Preset",
+          "label": "hidden",
+          "expression": {
+            "method": "ValueEquals",
+            "args": {
+              "value": "d3d93f85-1127-4453-9846-237c20083028",
+              "expected": {
+                "value": {
+                  "immediate": "fast_3_2",
+                  "type": "ltx23_i2v_resolution_preset"
+                }
+              }
+            }
+          },
+          "folded": true
+        },
+        "e2068b0b-8c16-4149-b042-cc3c0d6ef6a4": {
+          "name": "Is Full HD Landscape Preset",
+          "label": "hidden",
+          "expression": {
+            "method": "ValueEquals",
+            "args": {
+              "value": "d3d93f85-1127-4453-9846-237c20083028",
+              "expected": {
+                "value": {
+                  "immediate": "landscape_full_hd",
+                  "type": "ltx23_i2v_resolution_preset"
+                }
+              }
+            }
+          },
+          "folded": true
+        },
+        "c8566a41-9bc6-4318-bcb9-f5b567784aab": {
+          "name": "Landscape Width",
+          "label": "hidden",
+          "description": "Choose between the Full HD and HD landscape widths.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "e2068b0b-8c16-4149-b042-cc3c0d6ef6a4",
+              "on_false": "1ef915c4-6e9f-4979-8908-fa441411c508",
+              "on_true": "94d9ed6a-b04c-49e2-8206-e5c8117e1923"
+            }
+          },
+          "folded": true
+        },
+        "3a0fa31a-0916-4ea3-acde-5aa55f2a38b7": {
+          "name": "Landscape Height",
+          "label": "hidden",
+          "description": "Choose between the Full HD and HD landscape heights.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "e2068b0b-8c16-4149-b042-cc3c0d6ef6a4",
+              "on_false": "51623dc0-5bb1-4b80-bde2-2d3d07935979",
+              "on_true": "87a70d3b-6844-410d-aa45-3f8466d411b8"
+            }
+          },
+          "folded": true
+        },
+        "5a9e91e0-875d-412d-99b4-fd2c247ebf94": {
+          "name": "Rectangular Width",
+          "label": "hidden",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "ab651182-75f4-4d23-a25e-2de2df10227c",
+              "on_false": "c8566a41-9bc6-4318-bcb9-f5b567784aab",
+              "on_true": "2369f008-da6c-48bd-9daf-9e7832fe7a5c"
+            }
+          },
+          "folded": true
+        },
+        "a364f56c-3501-4e42-af3c-ab06148c2ca7": {
+          "name": "Rectangular Height",
+          "label": "hidden",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "ab651182-75f4-4d23-a25e-2de2df10227c",
+              "on_false": "3a0fa31a-0916-4ea3-acde-5aa55f2a38b7",
+              "on_true": "75fbaab4-2d45-47f0-8982-d6b9d5897e69"
+            }
+          },
+          "folded": true
+        },
+        "935331b9-1b3c-48fa-8e41-ce7fe90dbb66": {
+          "name": "Non-Square Width",
+          "label": "hidden",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "51d55c45-1e48-4e1d-a7de-dda2c2f37905",
+              "on_false": "5a9e91e0-875d-412d-99b4-fd2c247ebf94",
+              "on_true": "08ded2e0-0e03-45d6-b401-21e3181e9346"
+            }
+          },
+          "folded": true
+        },
+        "8faf515a-6d5b-4e65-9d10-00392879e5a2": {
+          "name": "Non-Square Height",
+          "label": "hidden",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "51d55c45-1e48-4e1d-a7de-dda2c2f37905",
+              "on_false": "a364f56c-3501-4e42-af3c-ab06148c2ca7",
+              "on_true": "1302209a-5681-4f7f-93dd-6aadc18ecf06"
+            }
+          },
+          "folded": true
+        },
+        "eb48a657-6901-445c-a4c9-d20f5bfc8abc": {
+          "name": "Full Sampling Steps",
+          "label": "advanced",
+          "description": "Base-pass sampling steps for Full mode. Higher values can improve quality but take longer.",
+          "expression": {
+            "value": {
+              "immediate": "20",
+              "type": "count"
+            }
+          },
+          "folded": true
+        },
+        "34e2e6f1-3db8-4404-9457-2139e0e891b3": {
+          "name": "Distilled LoRA Weight",
+          "label": "advanced",
+          "description": "Strength of the distilled LoRA applied to the base model.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "7549d82e-54a9-4778-acfc-9dec434b7870",
+              "on_false": "1877abc8-d74a-4f09-b24d-5c71b36fea77",
+              "on_true": "91d21dc9-ed11-4fbd-ab54-e468180dadc0"
+            }
+          },
+          "folded": true
+        },
+        "1877abc8-d74a-4f09-b24d-5c71b36fea77": {
+          "name": "Full Distilled LoRA Weight",
+          "label": "advanced",
+          "description": "Distilled LoRA strength for the Full branch. The current official full-model guide recommends 0.6 for the Stage 2 distilled LoRA.",
+          "expression": {
+            "value": {
+              "immediate": "0.6",
+              "type": "strength"
+            }
+          },
+          "folded": true
+        },
+        "91d21dc9-ed11-4fbd-ab54-e468180dadc0": {
+          "name": "Turbo Distilled LoRA Weight",
+          "label": "advanced",
+          "description": "Distilled LoRA strength for the Turbo branch.",
+          "expression": {
+            "value": {
+              "immediate": "0.5",
+              "type": "strength"
+            }
+          },
+          "folded": true
+        },
+        "8426e9a0-975b-4b73-8f71-1d493ea668dc": {
+          "name": "Adapter LoRA Strength",
+          "label": "advanced",
+          "description": "Strength for the optional adapter LoRA. The default adapter is the LTX 2.3 Pop Art LoRA from Civitai.",
+          "expression": {
+            "value": {
+              "immediate": "1",
+              "type": "strength"
+            }
+          },
+          "folded": true
+        },
+        "e5d6895b-8933-4423-93c3-d81fb8315954": {
+          "name": "Turbo Sampling Steps",
+          "label": "advanced",
+          "description": "Base-pass sampling steps for Turbo mode. Short schedules are intended for fast iteration.",
+          "expression": {
+            "value": {
+              "immediate": "8",
+              "type": "count"
+            }
+          },
+          "folded": true
+        },
+        "06e04a91-e64c-4ca1-8d7b-6abc3889cb14": {
+          "name": "Sampling Steps",
+          "label": "advanced",
+          "description": "Number of sampling steps used in the base generation pass. The official guide calls for 8 steps in the distilled workflow and 20-50 in the full workflow.\n\n[Official image-to-video guide: steps](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#steps)",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "7549d82e-54a9-4778-acfc-9dec434b7870",
+              "on_false": "eb48a657-6901-445c-a4c9-d20f5bfc8abc",
+              "on_true": "e5d6895b-8933-4423-93c3-d81fb8315954"
+            }
+          },
+          "folded": true
+        },
+        "ae0fba3e-b733-4435-b442-92371b84ae87": {
+          "name": "Video Frames",
+          "label": "config",
+          "description": "Number of frames to generate. Keep to the standard counts used throughout the official examples, such as 65, 97, 121, 161, or 257. The official guide recommends 121-161 for balanced quality and memory usage, 65-97 for quick iterations, and 257 as the maximum.\n\n[Official image-to-video guide: frame count](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#frame-count)",
+          "expression": {
+            "value": {
+              "immediate": "121",
+              "type": "count"
+            }
+          },
+          "folded": true
+        },
+        "3219c9c3-398b-4b33-b6a7-844ae8d2418d": {
+          "name": "Frame Rate",
+          "label": "config",
+          "description": "Frames per second. Keep it matched across conditioning, upscale, and final video output. The official guide recommends 24 for a cinematic feel, 25 as the default standard, and 30 for smoother action.\n\n[Official image-to-video guide: frame rate](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#frame-rate)",
+          "expression": {
+            "value": {
+              "immediate": "24",
+              "type": "fps"
+            }
+          },
+          "folded": true
+        },
+        "7156a03f-8372-4111-840b-a44385906f5e": {
+          "name": "Height",
+          "label": "config",
+          "description": "Output height from the selected resolution preset.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "68a5502e-27a1-42d4-a08c-8bec53d869a1",
+              "on_false": "8faf515a-6d5b-4e65-9d10-00392879e5a2",
+              "on_true": "d61438e3-36cd-452d-9798-334f7b90e31d"
+            }
+          },
+          "folded": true
+        },
+        "02d0bd92-5c19-4be8-a17e-89567d7c5d60": {
+          "name": "Reference Strength",
+          "label": "advanced",
+          "description": "How strongly the source image anchors the low-resolution pass. The upstream two-stage example uses 0.7.",
+          "expression": {
+            "value": {
+              "immediate": "0.7",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "d1c5769b-6637-4995-b0d7-c02c0edd11fd": {
+          "name": "Upscale Reference Strength",
+          "label": "advanced",
+          "description": "How strongly the source image anchors the upscale pass. The upstream two-stage example uses 1.",
+          "expression": {
+            "value": {
+              "immediate": "1",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "7cbf86b5-0e53-49ee-8555-79174e199386": {
+          "name": "Upscale Manual Sigmas",
+          "label": "advanced",
+          "description": "Manual sigma schedule for the upscale pass. The upstream two-stage example uses four values here.",
+          "expression": {
+            "value": {
+              "immediate": "0.85, 0.7250, 0.4219, 0.0",
+              "type": "text"
+            }
+          },
+          "folded": true
+        },
+        "1a3c5350-5af3-45fe-9c01-fa102a457d4b": {
+          "name": "Upscale",
+          "label": "config",
+          "description": "Enable the second pass that doubles resolution and refines detail. Disable it to preview the base pass faster. The official guide recommends previewing Stage 1 first, then enabling the upscale pass once motion and framing are locked.\n\n[Official image-to-video guide: Stage 2 upscale pass](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#stage-2-upscale-pass)",
+          "tags": [
+            "view:toolbar"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "true",
+              "type": "boolean"
+            }
+          },
+          "folded": true
+        },
+        "777c9101-2c56-40ea-9be9-be59c36eece9": {
+          "name": "2x",
+          "label": "config",
+          "description": "Enable the temporal x2 pass after the spatial upscale pass. This doubles the final framerate to preserve duration and is intended to be used together with Upscale.",
+          "tags": [
+            "view:toolbar"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "false",
+              "type": "boolean"
+            }
+          },
+          "folded": true
+        },
+        "8aeae72f-3f90-4ab9-a9f3-3c77ee9ea01d": {
+          "name": "Lora",
+          "label": "config",
+          "description": "Use the optional adapter LoRA for this generation.",
+          "tags": [
+            "view:toolbar"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "false",
+              "type": "boolean"
+            }
+          },
+          "folded": true
+        },
+        "d88d2fc8-a807-45c3-afdb-652e8551b78d": {
+          "name": "Adapter LoRA Trigger",
+          "label": "advanced",
+          "description": "Trigger text prepended to the prompt when the adapter LoRA is enabled. The default Pop Art adapter uses p0p-@rt.",
+          "expression": {
+            "value": {
+              "immediate": "p0p-@rt",
+              "type": "text"
+            }
+          },
+          "folded": true
+        },
+        "6e78a020-e594-4b5f-bfd2-2a18a0dca77d": {
+          "name": "Adapter LoRA Prompt Delimiter",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": ", ",
+              "type": "text"
+            }
+          },
+          "folded": true
+        },
+        "e2c7351c-210f-4031-a137-e0a522053767": {
+          "name": "Seed",
+          "label": "config",
+          "description": "Controls random variation. Keep it fixed for repeatable comparisons, or change it to explore motion variants.\n\n[Official image-to-video guide: seed](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#seed)",
+          "expression": {
+            "value": {
+              "immediate": "703820444",
+              "type": "seed"
+            }
+          },
+          "folded": true
+        },
+        "74dbc81d-8c4c-4d91-b8f4-747b9fbe2823": {
+          "name": "Width",
+          "label": "config",
+          "description": "Output width from the selected resolution preset.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "68a5502e-27a1-42d4-a08c-8bec53d869a1",
+              "on_false": "935331b9-1b3c-48fa-8e41-ce7fe90dbb66",
+              "on_true": "0f6a2056-fff7-493e-b404-4d1f6c63e729"
+            }
+          },
+          "folded": true
+        },
+        "e14fb4da-6e85-4576-aeb9-422402a8b4a0": {
+          "name": "Model Variant",
+          "label": "config",
+          "description": "Select the LTX 2.3 model package used for generation.",
+          "tags": [
+            "view:toolbar"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "standard",
+              "when": {
+                "gpuFamily": {
+                  "nvidia_blackwell": "nvidia_fp4"
+                }
+              },
+              "type": "ltx23_model_variant"
+            }
+          },
+          "folded": true
+        }
+      },
+      "name": "Settings",
+      "collapsed": false,
+      "mtime": 1772896998701
+    },
+    "933d9c4d-0257-4a92-b9f6-3d2e108bd31f": {
+      "elements": {
+        "5b65dd99-38e8-4cea-8fc1-9ee9615b110d": {
+          "name": "Apply Distilled LoRA",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixLoraLoaderModelOnly",
+            "args": {
+              "lora_name": "80cf8d70-af8d-499e-aca8-2bd2f18a8001",
+              "model": {
+                "id": "4487aa76-afe1-46aa-b92c-b9a914b03ca2",
+                "slot": 0
+              },
+              "strength_model": "34e2e6f1-3db8-4404-9457-2139e0e891b3"
+            }
+          },
+          "folded": true
+        },
+        "0f6047bd-1043-4f47-bfb1-768bf1aa866e": {
+          "name": "Apply Adapter LoRA",
+          "label": "advanced",
+          "description": "Apply the optional adapter LoRA after the distilled LoRA.",
+          "expression": {
+            "method": "AnymatixLoraLoaderModelOnly",
+            "args": {
+              "lora_name": "72de5138-0dec-49f9-b413-3da10588e5d8",
+              "model": "5b65dd99-38e8-4cea-8fc1-9ee9615b110d",
+              "strength_model": "8426e9a0-975b-4b73-8f71-1d493ea668dc"
+            }
+          },
+          "folded": true
+        },
+        "f16cbbca-5b19-4eec-9746-2c61fbbcb8fb": {
+          "name": "Selected Model",
+          "label": "advanced",
+          "description": "Switches between the standard LTX 2.3 model path and the adapter LoRA path.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "8aeae72f-3f90-4ab9-a9f3-3c77ee9ea01d",
+              "on_false": "5b65dd99-38e8-4cea-8fc1-9ee9615b110d",
+              "on_true": "0f6047bd-1043-4f47-bfb1-768bf1aa866e"
+            }
+          },
+          "folded": true
+        },
+        "31926151-350b-45e2-a070-e7ca4da50e46": {
+          "name": "Checkpoint URL",
+          "label": "advanced",
+          "tags": [
+            "base:ltx-2.3"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "https://huggingface.co/Lightricks/LTX-2.3/resolve/main/ltx-2.3-22b-dev.safetensors",
+              "type": "url/checkpoint"
+            }
+          },
+          "folded": true
+        },
+        "147adb51-fe38-4fe3-bcdf-fab94de4b123": {
+          "name": "Distilled LoRA URL",
+          "label": "advanced",
+          "expression": {
+            "value": {
+              "immediate": "https://huggingface.co/Lightricks/LTX-2.3/resolve/main/ltx-2.3-22b-distilled-lora-384-1.1.safetensors",
+              "type": "url/lora"
+            }
+          },
+          "folded": true
+        },
+        "c8d99c4d-a7fa-4353-abc2-88737c4780f8": {
+          "name": "Adapter LoRA URL",
+          "label": "advanced",
+          "tags": [
+            "base:ltx-2.3",
+            "kind:lora",
+            "provider:civitai",
+            "view:toolbar"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "https://civitai.com/api/download/models/2879765?type=Model&format=SafeTensor",
+              "type": "url/lora"
+            }
+          },
+          "folded": true
+        },
+        "4c8dd062-cb5f-4bee-9e9a-bb63b91ffe51": {
+          "name": "Fetch Checkpoint",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "31926151-350b-45e2-a070-e7ca4da50e46"
+            }
+          },
+          "folded": true
+        },
+        "80cf8d70-af8d-499e-aca8-2bd2f18a8001": {
+          "name": "Fetch LoRA",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "147adb51-fe38-4fe3-bcdf-fab94de4b123"
+            }
+          },
+          "folded": true
+        },
+        "72de5138-0dec-49f9-b413-3da10588e5d8": {
+          "name": "Fetch Adapter LoRA",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "c8d99c4d-a7fa-4353-abc2-88737c4780f8"
+            }
+          },
+          "folded": true
+        },
+        "ecc2d7f3-75e2-49da-8d2c-d3e812545b9e": {
+          "name": "Fetch Text Encoder",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "31471db6-f0f3-40e1-93c9-7c26929cc05d"
+            }
+          },
+          "folded": true
+        },
+        "70caf4f2-d032-4fd0-ac0e-988daa45282d": {
+          "name": "Fetch Upscaler",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "ba7883f7-9512-4cf2-b70d-65d0805adafc"
+            }
+          },
+          "folded": true
+        },
+        "b4e1aba8-dc03-46e2-93ff-85b7cb3d0486": {
+          "name": "Fetch Temporal Upscaler",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "a02bc61d-4a8b-4aec-bd4f-d1ab2035b01a"
+            }
+          },
+          "folded": true
+        },
+        "601a0079-8394-44b9-92d0-a124d09a434d": {
+          "name": "Load Audio VAE",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixLTXVAudioVAELoader",
+            "args": {
+              "ckpt_name": "4c8dd062-cb5f-4bee-9e9a-bb63b91ffe51"
+            }
+          },
+          "folded": true
+        },
+        "4487aa76-afe1-46aa-b92c-b9a914b03ca2": {
+          "name": "Load Base Model",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixCheckpointLoader",
+            "args": {
+              "ckpt_name": "ef52b8fa-79da-4e2c-9089-4e08fe562bf8"
+            }
+          },
+          "folded": true
+        },
+        "507862e4-2c2b-4d39-8bac-1b821b840b95": {
+          "name": "Load Spatial Upscaler",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixLatentUpscaleModelLoader",
+            "args": {
+              "model_name": "70caf4f2-d032-4fd0-ac0e-988daa45282d"
+            }
+          },
+          "folded": true
+        },
+        "574f73ef-e388-43f1-a3f2-bf39787153d5": {
+          "name": "Load Temporal Upscaler",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixLatentUpscaleModelLoader",
+            "args": {
+              "model_name": "b4e1aba8-dc03-46e2-93ff-85b7cb3d0486"
+            }
+          },
+          "folded": true
+        },
+        "0e4479b8-e006-486a-b312-68db6248394b": {
+          "name": "Load Text Encoder",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixLTXAVTextEncoderLoader",
+            "args": {
+              "text_encoder": "ecc2d7f3-75e2-49da-8d2c-d3e812545b9e",
+              "ckpt_name": "6efc14a4-28c0-4036-8498-d61c36ad540c"
+            }
+          },
+          "folded": true
+        },
+        "ba7883f7-9512-4cf2-b70d-65d0805adafc": {
+          "name": "Spatial Upscaler URL",
+          "label": "advanced",
+          "expression": {
+            "value": {
+              "immediate": "https://huggingface.co/Lightricks/LTX-2.3/resolve/main/ltx-2.3-spatial-upscaler-x2-1.1.safetensors",
+              "type": "url/latent_upscale"
+            }
+          },
+          "folded": true
+        },
+        "a02bc61d-4a8b-4aec-bd4f-d1ab2035b01a": {
+          "name": "Temporal Upscaler URL",
+          "label": "advanced",
+          "expression": {
+            "value": {
+              "immediate": "https://huggingface.co/Lightricks/LTX-2.3/resolve/main/ltx-2.3-temporal-upscaler-x2-1.0.safetensors",
+              "type": "url/latent_upscale"
+            }
+          },
+          "folded": true
+        },
+        "31471db6-f0f3-40e1-93c9-7c26929cc05d": {
+          "name": "Text Encoder URL",
+          "label": "advanced",
+          "expression": {
+            "value": {
+              "immediate": "https://huggingface.co/Comfy-Org/ltx-2/resolve/main/split_files/text_encoders/gemma_3_12B_it_fp4_mixed.safetensors",
+              "type": "url/text_encoders"
+            }
+          },
+          "folded": true
+        },
+        "97812f2e-29b7-4064-82eb-230f7407b802": {
+          "name": "NVIDIA FP4 Checkpoint URL",
+          "label": "advanced",
+          "description": "LTX 2.3 NVFP4 checkpoint from the Civitai FP4 package.",
+          "tags": [
+            "base:ltx-2.3",
+            "kind:checkpoint",
+            "provider:civitai",
+            "variant:nvidia-fp4"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "https://civitai.com/api/download/models/2781713",
+              "type": "url/checkpoint"
+            }
+          },
+          "folded": true
+        },
+        "c339afab-7ba5-4862-a499-3a498f89dc2a": {
+          "name": "NVIDIA FP4 Text Projection URL",
+          "label": "advanced",
+          "description": "Text projection file paired with the Civitai FP4 package.",
+          "tags": [
+            "base:ltx-2.3",
+            "kind:checkpoint",
+            "provider:civitai",
+            "variant:nvidia-fp4"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "https://civitai.com/api/download/models/2750767",
+              "type": "url/checkpoint"
+            }
+          },
+          "folded": true
+        },
+        "1e5f0d7c-4260-4215-9e77-b0db6b1df216": {
+          "name": "NVIDIA FP4 Video VAE URL",
+          "label": "advanced",
+          "description": "Video VAE file paired with the Civitai FP4 package.",
+          "tags": [
+            "base:ltx-2.3",
+            "kind:vae",
+            "provider:civitai",
+            "variant:nvidia-fp4"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "https://civitai.com/api/download/models/2750791",
+              "type": "url/vae"
+            }
+          },
+          "folded": true
+        },
+        "ca1ef7a4-e865-495c-becf-d5b9010e29de": {
+          "name": "NVIDIA FP4 Audio VAE URL",
+          "label": "advanced",
+          "description": "Audio VAE file paired with the Civitai FP4 package.",
+          "tags": [
+            "base:ltx-2.3",
+            "kind:checkpoint",
+            "provider:civitai",
+            "variant:nvidia-fp4"
+          ],
+          "expression": {
+            "value": {
+              "immediate": "https://civitai.com/api/download/models/2750820",
+              "type": "url/checkpoint"
+            }
+          },
+          "folded": true
+        },
+        "e7b0a8c4-b69d-42e7-9be5-5a38cf6ccadd": {
+          "name": "Fetch NVIDIA FP4 Checkpoint",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "97812f2e-29b7-4064-82eb-230f7407b802"
+            }
+          },
+          "folded": true
+        },
+        "fa05e220-a644-4fe5-be5a-d8333b279998": {
+          "name": "Fetch NVIDIA FP4 Text Projection",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "c339afab-7ba5-4862-a499-3a498f89dc2a"
+            }
+          },
+          "folded": true
+        },
+        "959ef134-5e6c-4444-8715-b1a3088cd8c7": {
+          "name": "Fetch NVIDIA FP4 Video VAE",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "1e5f0d7c-4260-4215-9e77-b0db6b1df216"
+            }
+          },
+          "folded": true
+        },
+        "42b4505d-33b3-4617-a61f-945e0359bc1e": {
+          "name": "Fetch NVIDIA FP4 Audio VAE",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixFetcher",
+            "args": {
+              "url": "ca1ef7a4-e865-495c-becf-d5b9010e29de"
+            }
+          },
+          "folded": true
+        },
+        "ef52b8fa-79da-4e2c-9089-4e08fe562bf8": {
+          "name": "Selected Checkpoint",
+          "label": "advanced",
+          "description": "Switches between the standard LTX 2.3 checkpoint and the NVIDIA FP4 checkpoint.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "e14fb4da-6e85-4576-aeb9-422402a8b4a0",
+              "on_false": "4c8dd062-cb5f-4bee-9e9a-bb63b91ffe51",
+              "on_true": "e7b0a8c4-b69d-42e7-9be5-5a38cf6ccadd"
+            }
+          },
+          "folded": true
+        },
+        "6efc14a4-28c0-4036-8498-d61c36ad540c": {
+          "name": "Selected Text Projection",
+          "label": "advanced",
+          "description": "Switches between the standard text projection and the NVIDIA FP4 package text projection.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "e14fb4da-6e85-4576-aeb9-422402a8b4a0",
+              "on_false": "4c8dd062-cb5f-4bee-9e9a-bb63b91ffe51",
+              "on_true": "fa05e220-a644-4fe5-be5a-d8333b279998"
+            }
+          },
+          "folded": true
+        },
+        "b93143aa-8adc-4b7a-b81b-3a1ed9311850": {
+          "name": "Load NVIDIA FP4 Video VAE",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixVAELoader",
+            "args": {
+              "vae_name": "959ef134-5e6c-4444-8715-b1a3088cd8c7"
+            }
+          },
+          "folded": true
+        },
+        "9068edce-50e1-46f5-9248-fc2c625bd5e3": {
+          "name": "Load NVIDIA FP4 Audio VAE",
+          "label": "advanced",
+          "expression": {
+            "method": "AnymatixLTXVAudioVAELoader",
+            "args": {
+              "ckpt_name": "42b4505d-33b3-4617-a61f-945e0359bc1e"
+            }
+          },
+          "folded": true
+        },
+        "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd": {
+          "name": "Selected Video VAE",
+          "label": "advanced",
+          "description": "Switches between the checkpoint VAE and the NVIDIA FP4 package video VAE.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "e14fb4da-6e85-4576-aeb9-422402a8b4a0",
+              "on_false": {
+                "id": "4487aa76-afe1-46aa-b92c-b9a914b03ca2",
+                "slot": 2
+              },
+              "on_true": "b93143aa-8adc-4b7a-b81b-3a1ed9311850"
+            }
+          },
+          "folded": true
+        },
+        "f485eab2-23e0-4fd1-8322-e72d189277df": {
+          "name": "Selected Audio VAE",
+          "label": "advanced",
+          "description": "Switches between the standard audio VAE and the NVIDIA FP4 package audio VAE.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "e14fb4da-6e85-4576-aeb9-422402a8b4a0",
+              "on_false": "601a0079-8394-44b9-92d0-a124d09a434d",
+              "on_true": "9068edce-50e1-46f5-9248-fc2c625bd5e3"
+            }
+          },
+          "folded": true
+        }
+      },
+      "name": "Models",
+      "collapsed": false,
+      "mtime": 1772896998701
+    },
+    "dee13ed1-7c34-46e4-8dd2-1b06eff4b62a": {
+      "elements": {
+        "4ce8fc79-1256-4866-a486-7eef21a714be": {
+          "name": "Background Color",
+          "label": "advanced",
+          "expression": {
+            "value": {
+              "immediate": "0",
+              "type": "count"
+            }
+          },
+          "folded": true
+        },
+        "3d96b9c9-11b2-41af-b110-94f7dc3d4d16": {
+          "name": "Base Guidance",
+          "label": "advanced",
+          "description": "Classifier-free guidance for the base pass. Upstream two-stage examples keep this close to 1.\n\n[Official image-to-video guide: CFG](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#cfg-classifier-free-guidance)",
+          "expression": {
+            "value": {
+              "immediate": "1",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "954418a6-82db-4331-9e41-376c2f5a8294": {
+          "name": "Base Sampler Type",
+          "label": "advanced",
+          "description": "Sampler used in the base generation pass.\n\n[Official image-to-video guide: sampler type](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#sampler-type)",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "7549d82e-54a9-4778-acfc-9dec434b7870",
+              "on_false": "1e20db48-6ef1-401d-be30-474ad2ec5315",
+              "on_true": "7f3ad3ee-b809-49a4-a157-074add450fd6"
+            }
+          },
+          "folded": true
+        },
+        "1e20db48-6ef1-401d-be30-474ad2ec5315": {
+          "name": "Full Base Sampler Type",
+          "label": "advanced",
+          "description": "Base-pass sampler for the Full branch.",
+          "expression": {
+            "value": {
+              "immediate": "euler_ancestral_cfg_pp",
+              "type": "sampler"
+            }
+          },
+          "folded": true
+        },
+        "7f3ad3ee-b809-49a4-a157-074add450fd6": {
+          "name": "Turbo Base Sampler Type",
+          "label": "advanced",
+          "description": "Base-pass sampler for the Turbo branch.",
+          "expression": {
+            "value": {
+              "immediate": "euler_ancestral_cfg_pp",
+              "type": "sampler"
+            }
+          },
+          "folded": true
+        },
+        "38a94130-186e-4cc1-8300-046db1798f72": {
+          "name": "Base Shift",
+          "label": "advanced",
+          "description": "Scheduler shift value for the base pass.",
+          "expression": {
+            "value": {
+              "immediate": "0.95",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "62686d00-e265-43a8-9527-a2ecd31825e6": {
+          "name": "Batch Size",
+          "label": "advanced",
+          "description": "Number of videos generated in one run. Higher values need more memory.",
+          "expression": {
+            "value": {
+              "immediate": "1",
+              "type": "count"
+            }
+          },
+          "folded": true
+        },
+        "1eb31d9b-f48d-42dc-9b0b-0e5c1f03222c": {
+          "name": "Disable Image Injection",
+          "label": "advanced",
+          "description": "Bypass image conditioning and behave more like text-to-video. Leave disabled for normal image-to-video use.",
+          "expression": {
+            "value": {
+              "immediate": "false",
+              "type": "boolean"
+            }
+          },
+          "folded": true
+        },
+        "6cdfe655-7555-4caa-b9e8-d1ec578ff181": {
+          "name": "Frame Rate (float)",
+          "label": "hidden",
+          "description": "Floating-point fps value fed into conditioning and final video creation nodes.",
+          "expression": {
+            "method": "easy mathFloat",
+            "args": {
+              "a": "3219c9c3-398b-4b33-b6a7-844ae8d2418d",
+              "b": "03c5c1c1-6c8f-4bf6-98f2-46853748eb27",
+              "operation": null
+            }
+          },
+          "folded": true
+        },
+        "03c5c1c1-6c8f-4bf6-98f2-46853748eb27": {
+          "name": "Float Zero",
+          "label": "hidden",
+          "description": "Hidden helper to cast integer fps controls onto floating-point paths.",
+          "expression": {
+            "value": {
+              "immediate": "0",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "3e3d8fe1-5185-4eac-b915-c80056f4103d": {
+          "name": "Float Two",
+          "label": "hidden",
+          "description": "Hidden helper to double FPS when interpolation is enabled.",
+          "expression": {
+            "value": {
+              "immediate": "2",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "a29356d3-daf6-4f6f-bbe3-0b2267407b48": {
+          "name": "multiply",
+          "label": "hidden",
+          "expression": {
+            "value": {
+              "immediate": "multiply",
+              "type": "operationMath"
+            }
+          },
+          "folded": true
+        },
+        "dca2b7be-5e7e-45b0-89c4-3c801e5edbca": {
+          "name": "Interpolated Frame Rate (float)",
+          "label": "hidden",
+          "description": "Hidden helper that doubles the output FPS when interpolation is enabled.",
+          "expression": {
+            "method": "easy mathFloat",
+            "args": {
+              "a": "6cdfe655-7555-4caa-b9e8-d1ec578ff181",
+              "b": "3e3d8fe1-5185-4eac-b915-c80056f4103d",
+              "operation": "a29356d3-daf6-4f6f-bbe3-0b2267407b48"
+            }
+          },
+          "folded": true
+        },
+        "173b5346-1734-4f91-88fa-d279f320acb1": {
+          "name": "Input Compression",
+          "label": "advanced",
+          "description": "Compression value used when preprocessing the source image for LTX conditioning.",
+          "expression": {
+            "value": {
+              "immediate": "18",
+              "type": "count"
+            }
+          },
+          "folded": true
+        },
+        "c9892f44-efea-4407-9918-7449850f821b": {
+          "name": "Latent Scale Helper",
+          "label": "advanced",
+          "description": "Scale factor used to build the lower-resolution latent canvas before upscaling.",
+          "expression": {
+            "value": {
+              "immediate": "0.5",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "3c28b4d9-6e2e-48b7-ae3d-c53b1a431e3c": {
+          "name": "Guide Scale Helper",
+          "label": "advanced",
+          "description": "Scale factor used to size guide images before preprocessing and injection.",
+          "expression": {
+            "value": {
+              "immediate": "2",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "8f27a999-f733-4d5d-926d-a361797e346a": {
+          "name": "Max Shift",
+          "label": "advanced",
+          "description": "Upper scheduler shift bound for the base pass.",
+          "expression": {
+            "value": {
+              "immediate": "2.05",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "b0dff0e3-afdb-4841-9962-1a1881e7af28": {
+          "name": "Scale Method",
+          "label": "advanced",
+          "description": "Resampling method used when resizing images inside the workflow.",
+          "expression": {
+            "value": {
+              "immediate": "lanczos",
+              "type": "upscale_method"
+            }
+          },
+          "folded": true
+        },
+        "a99df465-c545-4fc0-b360-ebfc2142c039": {
+          "name": "Scheduler Terminal",
+          "label": "advanced",
+          "description": "Terminal value used by the LTX scheduler in the base pass.",
+          "expression": {
+            "value": {
+              "immediate": "0.1",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "420dddca-ae8e-45d4-9e43-d5147cec85bc": {
+          "name": "Stretch Schedule",
+          "label": "advanced",
+          "description": "Whether the base-pass scheduler stretches its schedule across the latent sequence.",
+          "expression": {
+            "value": {
+              "immediate": "true",
+              "type": "boolean"
+            }
+          },
+          "folded": true
+        },
+        "26d99760-1844-4f7f-a406-84dc4e4430dc": {
+          "name": "Upscale Guidance",
+          "label": "advanced",
+          "description": "Classifier-free guidance for the upscale pass. Keep it close to 1 unless you are intentionally retuning.\n\n[Official image-to-video guide: CFG](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#cfg-classifier-free-guidance)",
+          "expression": {
+            "value": {
+              "immediate": "1",
+              "type": "number"
+            }
+          },
+          "folded": true
+        },
+        "0f436b64-4f2c-4c2e-8d58-d6aadeca3078": {
+          "name": "Upscale Sampler Type",
+          "label": "advanced",
+          "description": "Sampler used in the upscale pass. The upstream two-stage example uses euler_cfg_pp.\n\n[Official image-to-video guide: sampler type](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#sampler-type)",
+          "expression": {
+            "value": {
+              "immediate": "euler_cfg_pp",
+              "type": "sampler"
+            }
+          },
+          "folded": true
+        },
+        "d30cee21-b7e2-47b9-b12b-43ca1fad4aec": {
+          "name": "Upscale Seed",
+          "label": "config",
+          "description": "Seed for the upscale pass. Keep it fixed to compare detail changes consistently. The official guide recommends fixed seeds when iterating and previewing Stage 1 versus the final upscale pass.\n\n[Official image-to-video guide: seed](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#seed)\n[Official image-to-video guide: Stage 2 upscale pass](https://docs.ltx.video/open-source-model/usage-guides/image-to-video#stage-2-upscale-pass)",
+          "expression": {
+            "value": {
+              "immediate": "490867502",
+              "type": "seed"
+            }
+          },
+          "folded": true
+        },
+        "420fb118-7011-4591-84a3-42c12f09aad7": {
+          "name": "Resize Crop",
+          "label": "config",
+          "description": "How to handle aspect-ratio mismatch when resizing the source image. Center preserves aspect ratio by cropping; disabled stretches to fit.",
+          "expression": {
+            "value": {
+              "immediate": "center",
+              "type": "crop"
+            }
+          },
+          "folded": true
+        },
+        "769deca1-332c-4e1f-aa90-18e4fd91b876": {
+          "name": "Negative Prompt",
+          "label": "advanced",
+          "description": "Describe unwanted motion, objects, style, or artifacts to avoid in the result. Keep it short, concrete, and focused on failure modes you do not want in the shot.\n\n[Prompting guide: what to avoid](https://docs.ltx.video/open-source-model/usage-guides/prompting-guide#what-to-avoid)",
+          "expression": {
+            "value": {
+              "immediate": "blurry, low quality, still frame, frames, watermark, overlay, titles, has blurbox, has subtitles",
+              "type": "text"
+            }
+          },
+          "folded": true
+        }
+      },
+      "name": "Advanced",
+      "collapsed": false,
+      "mtime": 1772896998701
+    },
+    "9cfdacb2-5a1f-43e1-b6a8-7b636b019b98": {
+      "elements": {
+        "a18f7f73-d2f0-4d0d-b63c-e565977ecd55": {
+          "name": "Create Latent Canvas",
+          "label": "advanced",
+          "expression": {
+            "method": "EmptyImage",
+            "args": {
+              "width": {
+                "id": "c4b2821d-afd5-420d-b730-b481786e9e73",
+                "slot": 0
+              },
+              "height": {
+                "id": "c4b2821d-afd5-420d-b730-b481786e9e73",
+                "slot": 1
+              },
+              "batch_size": "62686d00-e265-43a8-9527-a2ecd31825e6",
+              "color": "4ce8fc79-1256-4866-a486-7eef21a714be"
+            }
+          },
+          "folded": true
+        },
+        "2c16b294-3caa-4544-b4ab-8641d7076f3a": {
+          "name": "Measure Latent Canvas",
+          "label": "advanced",
+          "expression": {
+            "method": "GetImageSize",
+            "args": {
+              "image": "0d7cb516-40c2-4b51-9ee9-c548ce300e74"
+            }
+          },
+          "folded": true
+        },
+        "c4b2821d-afd5-420d-b730-b481786e9e73": {
+          "name": "Measure Reference Size",
+          "label": "advanced",
+          "expression": {
+            "method": "GetImageSize",
+            "args": {
+              "image": "7f535291-b90b-4f02-9398-229dd1f85c30"
+            }
+          },
+          "folded": true
+        },
+        "55287fe3-2491-4318-b8bb-0c97c0ae28ec": {
+          "name": "Preprocess Reference Image",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVPreprocess",
+            "args": {
+              "image": "be958056-c4a8-4be6-9799-b650509b7f67",
+              "img_compression": "173b5346-1734-4f91-88fa-d279f320acb1"
+            }
+          },
+          "folded": true
+        },
+        "7f535291-b90b-4f02-9398-229dd1f85c30": {
+          "name": "Resize Reference Image",
+          "label": "advanced",
+          "expression": {
+            "method": "ResizeImageMaskNode",
+            "args": {
+              "input": "9826f311-6cb1-4c33-a506-f95c1ab6f59e",
+              "resize_type.width": "74dbc81d-8c4c-4d91-b8f4-747b9fbe2823",
+              "resize_type.height": "7156a03f-8372-4111-840b-a44385906f5e",
+              "resize_type.crop": "420fb118-7011-4591-84a3-42c12f09aad7",
+              "scale_method": "b0dff0e3-afdb-4841-9962-1a1881e7af28"
+            }
+          },
+          "folded": true
+        },
+        "be958056-c4a8-4be6-9799-b650509b7f67": {
+          "name": "Scale Reference Image For Guides",
+          "label": "advanced",
+          "expression": {
+            "method": "ImageScaleBy",
+            "args": {
+              "image": "7f535291-b90b-4f02-9398-229dd1f85c30",
+              "upscale_method": "b0dff0e3-afdb-4841-9962-1a1881e7af28",
+              "scale_by": "3c28b4d9-6e2e-48b7-ae3d-c53b1a431e3c"
+            }
+          },
+          "folded": true
+        },
+        "0d7cb516-40c2-4b51-9ee9-c548ce300e74": {
+          "name": "Scale Latent Canvas",
+          "label": "advanced",
+          "expression": {
+            "method": "ImageScaleBy",
+            "args": {
+              "image": "a18f7f73-d2f0-4d0d-b63c-e565977ecd55",
+              "upscale_method": "b0dff0e3-afdb-4841-9962-1a1881e7af28",
+              "scale_by": "c9892f44-efea-4407-9918-7449850f821b"
+            }
+          },
+          "folded": true
+        }
+      },
+      "name": "Image Prep",
+      "collapsed": false,
+      "mtime": 1772896998701
+    },
+    "1697cb2d-424c-41a1-b683-308359a3f5a7": {
+      "elements": {
+        "f38dba34-4168-47dd-ae48-395f95343325": {
+          "name": "Base Guidance",
+          "label": "advanced",
+          "expression": {
+            "method": "CFGGuider",
+            "args": {
+              "model": "f16cbbca-5b19-4eec-9746-2c61fbbcb8fb",
+              "positive": {
+                "id": "4c9cc183-f812-4fd3-bf3d-c388bd5d680d",
+                "slot": 0
+              },
+              "negative": {
+                "id": "4c9cc183-f812-4fd3-bf3d-c388bd5d680d",
+                "slot": 1
+              },
+              "cfg": "3d96b9c9-11b2-41af-b110-94f7dc3d4d16"
+            }
+          },
+          "folded": true
+        },
+        "c72076b6-6e79-43fb-91b8-979b1c52c19f": {
+          "name": "Base Noise",
+          "label": "advanced",
+          "expression": {
+            "method": "RandomNoise",
+            "args": {
+              "noise_seed": "e2c7351c-210f-4031-a137-e0a522053767"
+            }
+          },
+          "folded": true
+        },
+        "83d98a3d-1a6a-407b-82fc-4dd5563f1072": {
+          "name": "Base Sampler",
+          "label": "advanced",
+          "expression": {
+            "method": "KSamplerSelect",
+            "args": {
+              "sampler_name": "954418a6-82db-4331-9e41-376c2f5a8294"
+            }
+          },
+          "folded": true
+        },
+        "32811aab-7ef8-470d-946a-d74f9d100a10": {
+          "name": "Base Sigmas",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVScheduler",
+            "args": {
+              "latent": "b94348d9-7103-4b39-a4de-e0c0d06d0ec5",
+              "steps": "06e04a91-e64c-4ca1-8d7b-6abc3889cb14",
+              "max_shift": "8f27a999-f733-4d5d-926d-a361797e346a",
+              "base_shift": "38a94130-186e-4cc1-8300-046db1798f72",
+              "stretch": "420dddca-ae8e-45d4-9e43-d5147cec85bc",
+              "terminal": "a99df465-c545-4fc0-b360-ebfc2142c039"
+            }
+          },
+          "folded": true
+        },
+        "4c9cc183-f812-4fd3-bf3d-c388bd5d680d": {
+          "name": "Build AV Conditioning",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVConditioning",
+            "args": {
+              "positive": "fab34d75-6946-4073-9bc7-2627c4e86a93",
+              "negative": "ac314acd-8e9d-4afb-8ac4-9c912275b6d8",
+              "frame_rate": "6cdfe655-7555-4caa-b9e8-d1ec578ff181"
+            }
+          },
+          "folded": true
+        },
+        "b94348d9-7103-4b39-a4de-e0c0d06d0ec5": {
+          "name": "Combine Base Latents",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVConcatAVLatent",
+            "args": {
+              "video_latent": "5926ad64-1822-438c-b9d6-2d3614a7ff5c",
+              "audio_latent": "36c370f3-b1a1-464b-8725-8951347d274c"
+            }
+          },
+          "folded": true
+        },
+        "12a04621-de3c-4bfa-b27b-2be71c4abfaf": {
+          "name": "Combine Upscaled Latents",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVConcatAVLatent",
+            "args": {
+              "video_latent": "1b91173c-b249-4228-b1ce-9efd0b17e047",
+              "audio_latent": {
+                "id": "c05ee380-642a-4d9b-90dd-5ec5ee13ffba",
+                "slot": 1
+              }
+            }
+          },
+          "folded": true
+        },
+        "e6c99c7e-a0b7-42de-b28e-3856b3974dd3": {
+          "name": "Build Interpolate Conditioning",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVConditioning",
+            "args": {
+              "positive": "fab34d75-6946-4073-9bc7-2627c4e86a93",
+              "negative": "ac314acd-8e9d-4afb-8ac4-9c912275b6d8",
+              "frame_rate": "dca2b7be-5e7e-45b0-89c4-3c801e5edbca"
+            }
+          },
+          "folded": true
+        },
+        "fb942878-dcd2-46bc-9779-d692216c1817": {
+          "name": "Combine Interpolated Latents",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVConcatAVLatent",
+            "args": {
+              "video_latent": "92407b1e-d0b5-4f96-8975-abe098457241",
+              "audio_latent": {
+                "id": "e2bfa2c7-5a2c-4e59-b0ba-a2ea375e9aaa",
+                "slot": 1
+              }
+            }
+          },
+          "folded": true
+        },
+        "36c370f3-b1a1-464b-8725-8951347d274c": {
+          "name": "Empty Audio Latents",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVEmptyLatentAudio",
+            "args": {
+              "audio_vae": "f485eab2-23e0-4fd1-8322-e72d189277df",
+              "frames_number": "ae0fba3e-b733-4435-b442-92371b84ae87",
+              "frame_rate": "3219c9c3-398b-4b33-b6a7-844ae8d2418d",
+              "batch_size": "62686d00-e265-43a8-9527-a2ecd31825e6"
+            }
+          },
+          "folded": true
+        },
+        "0629f843-40a7-4380-ab09-09022fee29ea": {
+          "name": "Empty Video Latents",
+          "label": "advanced",
+          "expression": {
+            "method": "EmptyLTXVLatentVideo",
+            "args": {
+              "width": {
+                "id": "2c16b294-3caa-4544-b4ab-8641d7076f3a",
+                "slot": 0
+              },
+              "height": {
+                "id": "2c16b294-3caa-4544-b4ab-8641d7076f3a",
+                "slot": 1
+              },
+              "length": "ae0fba3e-b733-4435-b442-92371b84ae87",
+              "batch_size": "62686d00-e265-43a8-9527-a2ecd31825e6"
+            }
+          },
+          "folded": true
+        },
+        "fab34d75-6946-4073-9bc7-2627c4e86a93": {
+          "name": "Encode Prompt",
+          "label": "advanced",
+          "expression": {
+            "method": "CLIPTextEncode",
+            "args": {
+              "text": "efa6a1a6-4296-4a5d-a91a-a177dab4ac97",
+              "clip": "0e4479b8-e006-486a-b312-68db6248394b"
+            }
+          },
+          "folded": true
+        },
+        "2ec7455f-371a-48b5-8212-077affd0f96a": {
+          "name": "Adapter Prompt",
+          "label": "advanced",
+          "description": "Prompt with the adapter LoRA trigger prepended.",
+          "expression": {
+            "method": "StringConcatenate",
+            "args": {
+              "string_a": "d88d2fc8-a807-45c3-afdb-652e8551b78d",
+              "string_b": "6a2719f8-e466-4298-b1d5-972b0b3bfe9c",
+              "delimiter": "6e78a020-e594-4b5f-bfd2-2a18a0dca77d"
+            }
+          },
+          "folded": true
+        },
+        "efa6a1a6-4296-4a5d-a91a-a177dab4ac97": {
+          "name": "Selected Prompt",
+          "label": "advanced",
+          "description": "Switches between the original prompt and the adapter-triggered prompt.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "8aeae72f-3f90-4ab9-a9f3-3c77ee9ea01d",
+              "on_false": "6a2719f8-e466-4298-b1d5-972b0b3bfe9c",
+              "on_true": "2ec7455f-371a-48b5-8212-077affd0f96a"
+            }
+          },
+          "folded": true
+        },
+        "5926ad64-1822-438c-b9d6-2d3614a7ff5c": {
+          "name": "Inject Reference Image",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVImgToVideoInplace",
+            "args": {
+              "vae": "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd",
+              "image": "be958056-c4a8-4be6-9799-b650509b7f67",
+              "latent": "0629f843-40a7-4380-ab09-09022fee29ea",
+              "strength": "02d0bd92-5c19-4be8-a17e-89567d7c5d60",
+              "bypass": "1eb31d9b-f48d-42dc-9b0b-0e5c1f03222c"
+            }
+          },
+          "folded": true
+        },
+        "1b91173c-b249-4228-b1ce-9efd0b17e047": {
+          "name": "Inject Reference Image (Upscale)",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVImgToVideoInplace",
+            "args": {
+              "vae": "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd",
+              "image": "55287fe3-2491-4318-b8bb-0c97c0ae28ec",
+              "latent": "d5341fe9-6da5-401e-a13c-a01ae5741bc9",
+              "strength": "d1c5769b-6637-4995-b0d7-c02c0edd11fd",
+              "bypass": "1eb31d9b-f48d-42dc-9b0b-0e5c1f03222c"
+            }
+          },
+          "folded": true
+        },
+        "92407b1e-d0b5-4f96-8975-abe098457241": {
+          "name": "Inject Reference Image (Interpolate)",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVImgToVideoInplace",
+            "args": {
+              "vae": "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd",
+              "image": "55287fe3-2491-4318-b8bb-0c97c0ae28ec",
+              "latent": "2c54a68c-ac8b-4bd7-b046-9717a22d37e5",
+              "strength": "d1c5769b-6637-4995-b0d7-c02c0edd11fd",
+              "bypass": "1eb31d9b-f48d-42dc-9b0b-0e5c1f03222c"
+            }
+          },
+          "folded": true
+        },
+        "2c28c3a2-065e-43f9-b456-9656d5879041": {
+          "name": "Prepare Upscale Guides",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVCropGuides",
+            "args": {
+              "positive": {
+                "id": "4c9cc183-f812-4fd3-bf3d-c388bd5d680d",
+                "slot": 0
+              },
+              "negative": {
+                "id": "4c9cc183-f812-4fd3-bf3d-c388bd5d680d",
+                "slot": 1
+              },
+              "latent": {
+                "id": "c05ee380-642a-4d9b-90dd-5ec5ee13ffba",
+                "slot": 0
+              }
+            }
+          },
+          "folded": true
+        },
+        "6d2f806a-081d-4e84-97f7-4d563ffbb7d7": {
+          "name": "Prepare Interpolate Guides",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVCropGuides",
+            "args": {
+              "positive": {
+                "id": "e6c99c7e-a0b7-42de-b28e-3856b3974dd3",
+                "slot": 0
+              },
+              "negative": {
+                "id": "e6c99c7e-a0b7-42de-b28e-3856b3974dd3",
+                "slot": 1
+              },
+              "latent": {
+                "id": "e2bfa2c7-5a2c-4e59-b0ba-a2ea375e9aaa",
+                "slot": 0
+              }
+            }
+          },
+          "folded": true
+        },
+        "3ed9345f-41ed-4a67-ac25-45b48520dcec": {
+          "name": "Run Base Pass",
+          "label": "advanced",
+          "expression": {
+            "method": "SamplerCustomAdvanced",
+            "args": {
+              "noise": "c72076b6-6e79-43fb-91b8-979b1c52c19f",
+              "guider": "f38dba34-4168-47dd-ae48-395f95343325",
+              "sampler": "83d98a3d-1a6a-407b-82fc-4dd5563f1072",
+              "sigmas": "32811aab-7ef8-470d-946a-d74f9d100a10",
+              "latent_image": "b94348d9-7103-4b39-a4de-e0c0d06d0ec5"
+            }
+          },
+          "folded": true
+        },
+        "194c8746-b6d5-4d92-948b-e7f4aebea3f5": {
+          "name": "Run Upscale Pass",
+          "label": "advanced",
+          "expression": {
+            "method": "SamplerCustomAdvanced",
+            "args": {
+              "noise": "27d2b575-f75b-4c7a-8719-1343b301e19a",
+              "guider": "d2bb69f9-0bf8-4fd0-bdc6-df556c9241df",
+              "sampler": "953444af-8f02-4a5c-b6e9-36ff8230ee4d",
+              "sigmas": "2e754030-167c-4394-9f1c-49ebf8d5a095",
+              "latent_image": "12a04621-de3c-4bfa-b27b-2be71c4abfaf"
+            }
+          },
+          "folded": true
+        },
+        "182cfe33-9343-486e-acd0-d706dc0365c8": {
+          "name": "Run Interpolate Pass",
+          "label": "advanced",
+          "expression": {
+            "method": "SamplerCustomAdvanced",
+            "args": {
+              "noise": "27d2b575-f75b-4c7a-8719-1343b301e19a",
+              "guider": "07a5e0de-c6de-4cd9-b666-312d4a5703b2",
+              "sampler": "953444af-8f02-4a5c-b6e9-36ff8230ee4d",
+              "sigmas": "2e754030-167c-4394-9f1c-49ebf8d5a095",
+              "latent_image": "fb942878-dcd2-46bc-9779-d692216c1817"
+            }
+          },
+          "folded": true
+        },
+        "c05ee380-642a-4d9b-90dd-5ec5ee13ffba": {
+          "name": "Separate Base Latents",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVSeparateAVLatent",
+            "args": {
+              "av_latent": "3ed9345f-41ed-4a67-ac25-45b48520dcec"
+            }
+          },
+          "folded": true
+        },
+        "e2bfa2c7-5a2c-4e59-b0ba-a2ea375e9aaa": {
+          "name": "Separate Final Latents",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVSeparateAVLatent",
+            "args": {
+              "av_latent": "194c8746-b6d5-4d92-948b-e7f4aebea3f5"
+            }
+          },
+          "folded": true
+        },
+        "c1d60ac5-71b7-4f68-bd7a-4d061a708005": {
+          "name": "Separate Interpolated Latents",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVSeparateAVLatent",
+            "args": {
+              "av_latent": "182cfe33-9343-486e-acd0-d706dc0365c8"
+            }
+          },
+          "folded": true
+        },
+        "d5341fe9-6da5-401e-a13c-a01ae5741bc9": {
+          "name": "Spatial Upscale",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVLatentUpsampler",
+            "args": {
+              "samples": {
+                "id": "2c28c3a2-065e-43f9-b456-9656d5879041",
+                "slot": 2
+              },
+              "upscale_model": "507862e4-2c2b-4d39-8bac-1b821b840b95",
+              "vae": "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd"
+            }
+          },
+          "folded": true
+        },
+        "2c54a68c-ac8b-4bd7-b046-9717a22d37e5": {
+          "name": "Temporal Upscale",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVLatentUpsampler",
+            "args": {
+              "samples": {
+                "id": "6d2f806a-081d-4e84-97f7-4d563ffbb7d7",
+                "slot": 2
+              },
+              "upscale_model": "574f73ef-e388-43f1-a3f2-bf39787153d5",
+              "vae": "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd"
+            }
+          },
+          "folded": true
+        },
+        "d2bb69f9-0bf8-4fd0-bdc6-df556c9241df": {
+          "name": "Upscale Guidance",
+          "label": "advanced",
+          "expression": {
+            "method": "CFGGuider",
+            "args": {
+              "model": "f16cbbca-5b19-4eec-9746-2c61fbbcb8fb",
+              "positive": {
+                "id": "2c28c3a2-065e-43f9-b456-9656d5879041",
+                "slot": 0
+              },
+              "negative": {
+                "id": "2c28c3a2-065e-43f9-b456-9656d5879041",
+                "slot": 1
+              },
+              "cfg": "26d99760-1844-4f7f-a406-84dc4e4430dc"
+            }
+          },
+          "folded": true
+        },
+        "07a5e0de-c6de-4cd9-b666-312d4a5703b2": {
+          "name": "Interpolate Guidance",
+          "label": "advanced",
+          "expression": {
+            "method": "CFGGuider",
+            "args": {
+              "model": "f16cbbca-5b19-4eec-9746-2c61fbbcb8fb",
+              "positive": {
+                "id": "6d2f806a-081d-4e84-97f7-4d563ffbb7d7",
+                "slot": 0
+              },
+              "negative": {
+                "id": "6d2f806a-081d-4e84-97f7-4d563ffbb7d7",
+                "slot": 1
+              },
+              "cfg": "26d99760-1844-4f7f-a406-84dc4e4430dc"
+            }
+          },
+          "folded": true
+        },
+        "27d2b575-f75b-4c7a-8719-1343b301e19a": {
+          "name": "Upscale Noise",
+          "label": "advanced",
+          "expression": {
+            "method": "RandomNoise",
+            "args": {
+              "noise_seed": "d30cee21-b7e2-47b9-b12b-43ca1fad4aec"
+            }
+          },
+          "folded": true
+        },
+        "953444af-8f02-4a5c-b6e9-36ff8230ee4d": {
+          "name": "Upscale Sampler",
+          "label": "advanced",
+          "expression": {
+            "method": "KSamplerSelect",
+            "args": {
+              "sampler_name": "0f436b64-4f2c-4c2e-8d58-d6aadeca3078"
+            }
+          },
+          "folded": true
+        },
+        "2e754030-167c-4394-9f1c-49ebf8d5a095": {
+          "name": "Upscale Sigmas",
+          "label": "advanced",
+          "expression": {
+            "method": "ManualSigmas",
+            "args": {
+              "sigmas": "7cbf86b5-0e53-49ee-8555-79174e199386"
+            }
+          },
+          "folded": true
+        },
+        "ac314acd-8e9d-4afb-8ac4-9c912275b6d8": {
+          "name": "Zero Negative Conditioning",
+          "label": "advanced",
+          "expression": {
+            "method": "ConditioningZeroOut",
+            "args": {
+              "conditioning": "fab34d75-6946-4073-9bc7-2627c4e86a93"
+            }
+          },
+          "folded": true
+        }
+      },
+      "name": "Pipeline",
+      "collapsed": false,
+      "mtime": 1772896998701
+    },
+    "117e3a76-bce5-4687-aae8-25fdc4439a19": {
+      "elements": {
+        "dc5b8c11-d7ed-4c87-9b49-5f2c60dda42b": {
+          "name": "Base Audio",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVAudioVAEDecode",
+            "args": {
+              "samples": {
+                "id": "c05ee380-642a-4d9b-90dd-5ec5ee13ffba",
+                "slot": 1
+              },
+              "audio_vae": "f485eab2-23e0-4fd1-8322-e72d189277df"
+            }
+          },
+          "folded": true
+        },
+        "ae6b8640-c742-46fe-8c10-11beb790376e": {
+          "name": "Base Frames",
+          "label": "advanced",
+          "expression": {
+            "method": "VAEDecode",
+            "args": {
+              "samples": {
+                "id": "c05ee380-642a-4d9b-90dd-5ec5ee13ffba",
+                "slot": 0
+              },
+              "vae": "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd"
+            }
+          },
+          "folded": true
+        },
+        "99c304f9-04b8-46e1-baa2-8116b7e33b9d": {
+          "name": "Preview Audio",
+          "label": "advanced",
+          "expression": {
+            "method": "LTXVAudioVAEDecode",
+            "args": {
+              "samples": {
+                "id": "e2bfa2c7-5a2c-4e59-b0ba-a2ea375e9aaa",
+                "slot": 1
+              },
+              "audio_vae": "f485eab2-23e0-4fd1-8322-e72d189277df"
+            }
+          },
+          "folded": true
+        },
+        "29fca37a-0a3d-4daa-a9d0-d2dc617391d4": {
+          "name": "Preview Frames",
+          "label": "advanced",
+          "expression": {
+            "method": "VAEDecode",
+            "args": {
+              "samples": {
+                "id": "e2bfa2c7-5a2c-4e59-b0ba-a2ea375e9aaa",
+                "slot": 0
+              },
+              "vae": "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd"
+            }
+          },
+          "folded": true
+        },
+        "20052fe7-03f5-470f-b4ea-de4c42e814cd": {
+          "name": "Interpolated Frames",
+          "label": "advanced",
+          "expression": {
+            "method": "VAEDecode",
+            "args": {
+              "samples": {
+                "id": "c1d60ac5-71b7-4f68-bd7a-4d061a708005",
+                "slot": 0
+              },
+              "vae": "bc8d25f3-99c2-4542-9faf-f4ed5409c9fd"
+            }
+          },
+          "folded": true
+        },
+        "71440e65-c1f1-462a-81b7-63741f72d114": {
+          "name": "Selected Output Audio",
+          "label": "advanced",
+          "description": "Select which audio stream is attached to the final video output.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "1a3c5350-5af3-45fe-9c01-fa102a457d4b",
+              "on_false": "dc5b8c11-d7ed-4c87-9b49-5f2c60dda42b",
+              "on_true": "99c304f9-04b8-46e1-baa2-8116b7e33b9d"
+            }
+          },
+          "folded": true
+        },
+        "d35c2f56-6213-4414-8d6a-769a75865cfe": {
+          "name": "Selected Upscaled Frames",
+          "label": "advanced",
+          "description": "Select whether the upscaled output uses the spatial result or the interpolated result.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "777c9101-2c56-40ea-9be9-be59c36eece9",
+              "on_false": "29fca37a-0a3d-4daa-a9d0-d2dc617391d4",
+              "on_true": "20052fe7-03f5-470f-b4ea-de4c42e814cd"
+            }
+          },
+          "folded": true
+        },
+        "c608ec2b-ff10-45f3-b146-9058cf790382": {
+          "name": "Selected Output Frames",
+          "label": "advanced",
+          "description": "Select whether the final video uses base-pass frames or the upscaled result.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "1a3c5350-5af3-45fe-9c01-fa102a457d4b",
+              "on_false": "ae6b8640-c742-46fe-8c10-11beb790376e",
+              "on_true": "d35c2f56-6213-4414-8d6a-769a75865cfe"
+            }
+          },
+          "folded": true
+        },
+        "73eafa72-1c57-45ad-988e-46147a8c57b3": {
+          "name": "Selected Upscaled FPS",
+          "label": "hidden",
+          "description": "Select whether the upscaled output uses the base FPS or doubled FPS for interpolation.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "777c9101-2c56-40ea-9be9-be59c36eece9",
+              "on_false": "6cdfe655-7555-4caa-b9e8-d1ec578ff181",
+              "on_true": "dca2b7be-5e7e-45b0-89c4-3c801e5edbca"
+            }
+          },
+          "folded": true
+        },
+        "eef3917f-4ec1-4bba-bdd6-b818fabe6987": {
+          "name": "Selected Output FPS",
+          "label": "hidden",
+          "description": "Select the final FPS used for video assembly.",
+          "expression": {
+            "method": "Selector",
+            "args": {
+              "switch": "1a3c5350-5af3-45fe-9c01-fa102a457d4b",
+              "on_false": "6cdfe655-7555-4caa-b9e8-d1ec578ff181",
+              "on_true": "73eafa72-1c57-45ad-988e-46147a8c57b3"
+            }
+          },
+          "folded": true
+        },
+        "30d11de3-fa79-4e16-8594-a8cc7992bdb5": {
+          "name": "Video",
+          "label": "basic",
+          "description": "Final synchronized video generated by the workflow.",
+          "tags": [
+            "view:output",
+            "export:production"
+          ],
+          "expression": {
+            "method": "AnymatixImageToVideo",
+            "args": {
+              "images": "c608ec2b-ff10-45f3-b146-9058cf790382",
+              "audio": "71440e65-c1f1-462a-81b7-63741f72d114",
+              "fps": "eef3917f-4ec1-4bba-bdd6-b818fabe6987"
+            }
+          },
+          "folded": true
+        }
+      },
+      "name": "Output",
+      "collapsed": false,
+      "mtime": 1772896998701
+    }
+  },
+  "name": "LTX 2.3 Image to Video",
+  "tags": [
+    "ltx-2.3"
+  ],
+  "comment": "",
+  "default": false,
+  "collapsed": true,
+  "mtime": 1782341456257,
+  "external": true,
+  "libraryProject": "84478193-ea13-4483-8ab8-6c0c7379eea9"
+}

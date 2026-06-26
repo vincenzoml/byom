@@ -1,0 +1,620 @@
+{
+  "elements": {
+    "6fa8a4c1-fe4a-46ce-8811-0dab15c1f35f": {
+      "name": "Resolution Preset",
+      "label": "config",
+      "description": "Choose output size preset.",
+      "tags": [
+        "view:toolbar"
+      ],
+      "expression": {
+        "value": {
+          "immediate": "square_768",
+          "type": "start_resolution_preset"
+        }
+      },
+      "folded": true
+    },
+    "5b8c78e5-51ca-4bac-90be-2c589e1fa823": {
+      "name": "square_512 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "512",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "d8a94288-62b1-4173-bb3f-3d929cb66af6": {
+      "name": "square_512 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "512",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "ece0a4a2-4a57-448d-9631-cfe4a4253ce3": {
+      "name": "square_768 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "768",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "428f9d52-6393-4143-9484-5db216ff53d6": {
+      "name": "square_768 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "768",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "a669909a-17d2-4d8a-9ef6-d2f2d8a24b76": {
+      "name": "landscape_768_512 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "768",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "4ead7052-a63e-4cfe-ba73-35571a57b983": {
+      "name": "landscape_768_512 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "512",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "db761f89-cc5f-4ee1-940a-a39fbfc71138": {
+      "name": "portrait_512_768 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "512",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "a1f5810b-f4d7-480f-9a15-4daaebdfeacc": {
+      "name": "portrait_512_768 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "768",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "9605ce32-b410-481c-b693-5f02e254535c": {
+      "name": "square_1024 width",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "1024",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "0015f3cb-245e-48ec-a37b-8ffca9433368": {
+      "name": "square_1024 height",
+      "label": "hidden",
+      "expression": {
+        "value": {
+          "immediate": "1024",
+          "type": "resolution"
+        }
+      },
+      "folded": true
+    },
+    "bb60900f-7d9f-4225-bdb4-3828e34253d7": {
+      "name": "Is Square 512 Preset",
+      "label": "hidden",
+      "expression": {
+        "method": "ValueEquals",
+        "args": {
+          "value": "6fa8a4c1-fe4a-46ce-8811-0dab15c1f35f",
+          "expected": {
+            "value": {
+              "immediate": "square_512",
+              "type": "start_resolution_preset"
+            }
+          }
+        }
+      },
+      "folded": true
+    },
+    "d565ba78-ab29-4499-a378-4fa30a58e420": {
+      "name": "Is Square 768 Preset",
+      "label": "hidden",
+      "expression": {
+        "method": "ValueEquals",
+        "args": {
+          "value": "6fa8a4c1-fe4a-46ce-8811-0dab15c1f35f",
+          "expected": {
+            "value": {
+              "immediate": "square_768",
+              "type": "start_resolution_preset"
+            }
+          }
+        }
+      },
+      "folded": true
+    },
+    "e1178f4c-9d05-4332-b1bd-97f1fd8d481f": {
+      "name": "Is Landscape 768 512 Preset",
+      "label": "hidden",
+      "expression": {
+        "method": "ValueEquals",
+        "args": {
+          "value": "6fa8a4c1-fe4a-46ce-8811-0dab15c1f35f",
+          "expected": {
+            "value": {
+              "immediate": "landscape_768_512",
+              "type": "start_resolution_preset"
+            }
+          }
+        }
+      },
+      "folded": true
+    },
+    "f1289647-c78b-49e7-a812-f829a4f68a05": {
+      "name": "Is Portrait 512 768 Preset",
+      "label": "hidden",
+      "expression": {
+        "method": "ValueEquals",
+        "args": {
+          "value": "6fa8a4c1-fe4a-46ce-8811-0dab15c1f35f",
+          "expected": {
+            "value": {
+              "immediate": "portrait_512_768",
+              "type": "start_resolution_preset"
+            }
+          }
+        }
+      },
+      "folded": true
+    },
+    "aa94e7fc-105a-45ed-b32a-d93e32ff9846": {
+      "name": "Select width (portrait_512_768)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "f1289647-c78b-49e7-a812-f829a4f68a05",
+          "on_false": "9605ce32-b410-481c-b693-5f02e254535c",
+          "on_true": "db761f89-cc5f-4ee1-940a-a39fbfc71138"
+        }
+      },
+      "folded": true
+    },
+    "db6c4d25-12a7-427e-8808-4ac20815ec26": {
+      "name": "Select height (portrait_512_768)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "f1289647-c78b-49e7-a812-f829a4f68a05",
+          "on_false": "0015f3cb-245e-48ec-a37b-8ffca9433368",
+          "on_true": "a1f5810b-f4d7-480f-9a15-4daaebdfeacc"
+        }
+      },
+      "folded": true
+    },
+    "6c5c4930-9bea-4fb1-9354-54a03631f4a0": {
+      "name": "Select width (landscape_768_512)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "e1178f4c-9d05-4332-b1bd-97f1fd8d481f",
+          "on_false": "aa94e7fc-105a-45ed-b32a-d93e32ff9846",
+          "on_true": "a669909a-17d2-4d8a-9ef6-d2f2d8a24b76"
+        }
+      },
+      "folded": true
+    },
+    "acb353e6-ecac-4ea7-96c3-7c3ac5ad6447": {
+      "name": "Select height (landscape_768_512)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "e1178f4c-9d05-4332-b1bd-97f1fd8d481f",
+          "on_false": "db6c4d25-12a7-427e-8808-4ac20815ec26",
+          "on_true": "4ead7052-a63e-4cfe-ba73-35571a57b983"
+        }
+      },
+      "folded": true
+    },
+    "24de3c5e-e623-4b8a-80bc-679df6077be9": {
+      "name": "Select width (square_768)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "d565ba78-ab29-4499-a378-4fa30a58e420",
+          "on_false": "6c5c4930-9bea-4fb1-9354-54a03631f4a0",
+          "on_true": "ece0a4a2-4a57-448d-9631-cfe4a4253ce3"
+        }
+      },
+      "folded": true
+    },
+    "286b7638-2975-4913-8315-e8d5fb401cb9": {
+      "name": "Select height (square_768)",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "d565ba78-ab29-4499-a378-4fa30a58e420",
+          "on_false": "acb353e6-ecac-4ea7-96c3-7c3ac5ad6447",
+          "on_true": "428f9d52-6393-4143-9484-5db216ff53d6"
+        }
+      },
+      "folded": true
+    },
+    "bf3d5ca2-efa0-4343-8e77-70cf5c21ea0f": {
+      "name": "CLIP URL",
+      "label": "advanced",
+      "description": "Text encoder download URL.",
+      "expression": {
+        "value": {
+          "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+          "type": "url/text_encoders"
+        }
+      },
+      "folded": true
+    },
+    "03447702-03f5-4a67-bee4-f6a0c493394a": {
+      "name": "Fetch CLIP",
+      "label": "advanced",
+      "description": "Download the text encoder.",
+      "expression": {
+        "method": "AnymatixFetcher",
+        "args": {
+          "url": "bf3d5ca2-efa0-4343-8e77-70cf5c21ea0f"
+        }
+      },
+      "folded": true
+    },
+    "c460635d-c6e6-4df9-9864-b37734287845": {
+      "name": "Load CLIP",
+      "label": "advanced",
+      "description": "Load the text encoder.",
+      "expression": {
+        "method": "AnymatixCLIPLoader",
+        "args": {
+          "clip_name": "03447702-03f5-4a67-bee4-f6a0c493394a"
+        }
+      },
+      "folded": true
+    },
+    "358bb99b-0012-4a5a-97f5-97c31c2a8b97": {
+      "name": "VAE URL",
+      "label": "advanced",
+      "description": "VAE download URL.",
+      "expression": {
+        "value": {
+          "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
+          "type": "url/vae"
+        }
+      },
+      "folded": true
+    },
+    "86913395-9bb3-4414-8faa-56f0462cd326": {
+      "name": "Fetch VAE",
+      "label": "advanced",
+      "description": "Download the VAE.",
+      "expression": {
+        "method": "AnymatixFetcher",
+        "args": {
+          "url": "358bb99b-0012-4a5a-97f5-97c31c2a8b97"
+        }
+      },
+      "folded": true
+    },
+    "ce35808a-6c55-4991-8104-17bead7d3edc": {
+      "name": "Load VAE",
+      "label": "advanced",
+      "description": "Load the VAE.",
+      "expression": {
+        "method": "AnymatixVAELoader",
+        "args": {
+          "vae_name": "86913395-9bb3-4414-8faa-56f0462cd326"
+        }
+      },
+      "folded": true
+    },
+    "9a9dec01-e320-44d7-98a1-d0fc7510ca89": {
+      "name": "Prompt",
+      "label": "basic",
+      "description": "Describe the image to create.",
+      "expression": {
+        "value": {
+          "immediate": "Glitch art paradigmatic nonsensical metaphysical noise, exploration of void",
+          "type": "text"
+        }
+      },
+      "folded": true
+    },
+    "509a02c6-2da2-4714-bc9d-f8fc34696d23": {
+      "name": "Encode Prompt",
+      "label": "advanced",
+      "description": "Encode the prompt for sampling.",
+      "expression": {
+        "method": "CLIPTextEncode",
+        "args": {
+          "text": "9a9dec01-e320-44d7-98a1-d0fc7510ca89",
+          "clip": "c460635d-c6e6-4df9-9864-b37734287845"
+        }
+      },
+      "folded": true
+    },
+    "83032078-db88-4301-8587-d9561976bbee": {
+      "name": "Conditioning Zero Out",
+      "label": "advanced",
+      "description": "Create empty negative conditioning.",
+      "expression": {
+        "method": "ConditioningZeroOut",
+        "args": {
+          "conditioning": "509a02c6-2da2-4714-bc9d-f8fc34696d23"
+        }
+      },
+      "folded": true
+    },
+    "c34f3308-2ec7-45e8-aed3-5439fc989a41": {
+      "name": "Model URL",
+      "label": "advanced",
+      "description": "Diffusion model download URL.",
+      "tags": [
+        "base:z-image"
+      ],
+      "expression": {
+        "value": {
+          "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors",
+          "type": "url/diffusion_model"
+        }
+      },
+      "folded": true
+    },
+    "55734a17-1d95-47e8-8340-a0dd071f6111": {
+      "name": "Fetch Model",
+      "label": "advanced",
+      "description": "Download the diffusion model.",
+      "expression": {
+        "method": "AnymatixFetcher",
+        "args": {
+          "url": "c34f3308-2ec7-45e8-aed3-5439fc989a41"
+        }
+      },
+      "folded": true
+    },
+    "a106464f-fa6c-4a20-b938-d08e7018c94d": {
+      "name": "Load Model",
+      "label": "advanced",
+      "description": "Load the diffusion model.",
+      "expression": {
+        "method": "AnymatixUNETLoader",
+        "args": {
+          "unet_name": "55734a17-1d95-47e8-8340-a0dd071f6111"
+        }
+      },
+      "folded": true
+    },
+    "f68b86e1-5a5b-4f16-9c04-7786b12a2665": {
+      "name": "Width",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "bb60900f-7d9f-4225-bdb4-3828e34253d7",
+          "on_false": "24de3c5e-e623-4b8a-80bc-679df6077be9",
+          "on_true": "5b8c78e5-51ca-4bac-90be-2c589e1fa823"
+        }
+      },
+      "folded": true
+    },
+    "8b4ad8ab-6a68-48a3-8c7f-558eeea74ff0": {
+      "name": "Height",
+      "label": "hidden",
+      "expression": {
+        "method": "Selector",
+        "args": {
+          "switch": "bb60900f-7d9f-4225-bdb4-3828e34253d7",
+          "on_false": "286b7638-2975-4913-8315-e8d5fb401cb9",
+          "on_true": "d8a94288-62b1-4173-bb3f-3d929cb66af6"
+        }
+      },
+      "folded": true
+    },
+    "02820bff-5368-4429-93f1-562e260ee020": {
+      "name": "Batch Size",
+      "label": "advanced",
+      "description": "Number of images to generate.",
+      "expression": {
+        "value": {
+          "immediate": "1",
+          "type": "count"
+        }
+      },
+      "folded": true
+    },
+    "be1ad4af-70ff-47d2-93d1-376397703558": {
+      "name": "Empty SD3 Latent Image",
+      "label": "advanced",
+      "description": "Create the starting latent image.",
+      "expression": {
+        "method": "EmptySD3LatentImage",
+        "args": {
+          "width": "f68b86e1-5a5b-4f16-9c04-7786b12a2665",
+          "height": "8b4ad8ab-6a68-48a3-8c7f-558eeea74ff0",
+          "batch_size": "02820bff-5368-4429-93f1-562e260ee020"
+        }
+      },
+      "folded": true
+    },
+    "ca31c617-3e49-440c-81cb-5a8277f2263d": {
+      "name": "Shift",
+      "label": "advanced",
+      "description": "Sampling shift for this model.",
+      "expression": {
+        "value": {
+          "immediate": "3",
+          "type": "number"
+        }
+      },
+      "folded": true
+    },
+    "4560e36e-6ec8-4a40-b92e-693218cc89e5": {
+      "name": "Apply Model Sampling",
+      "label": "advanced",
+      "description": "Apply model-specific sampling settings.",
+      "expression": {
+        "method": "ModelSamplingAuraFlow",
+        "args": {
+          "model": "a106464f-fa6c-4a20-b938-d08e7018c94d",
+          "shift": "ca31c617-3e49-440c-81cb-5a8277f2263d"
+        }
+      },
+      "folded": true
+    },
+    "753fb4ed-0aa7-408d-a96f-719b5d4743cb": {
+      "name": "Seed",
+      "label": "config",
+      "description": "Controls random variation.",
+      "expression": {
+        "value": {
+          "immediate": "3229073742",
+          "type": "seed"
+        }
+      },
+      "folded": true
+    },
+    "12d934eb-0189-465e-8971-244ee8921b99": {
+      "name": "Steps",
+      "label": "config",
+      "description": "Number of sampling steps.",
+      "expression": {
+        "value": {
+          "immediate": "9",
+          "type": "count"
+        }
+      },
+      "folded": true
+    },
+    "0a4b886d-02ea-4c5c-b091-1a44e0e310d0": {
+      "name": "Guidance",
+      "label": "advanced",
+      "description": "Prompt guidance strength.",
+      "expression": {
+        "value": {
+          "immediate": "1",
+          "type": "cfg"
+        }
+      },
+      "folded": true
+    },
+    "78f83952-830b-401e-a314-1ffbfed333bd": {
+      "name": "Sampler",
+      "label": "advanced",
+      "description": "Sampling algorithm.",
+      "expression": {
+        "value": {
+          "immediate": "res_multistep",
+          "type": "sampler"
+        }
+      },
+      "folded": true
+    },
+    "f001d6e6-907c-405e-9dea-4b1c74a1229c": {
+      "name": "Scheduler",
+      "label": "advanced",
+      "description": "Sampling schedule.",
+      "expression": {
+        "value": {
+          "immediate": "simple",
+          "type": "scheduler"
+        }
+      },
+      "folded": true
+    },
+    "e5533f25-df9b-4c0b-b92b-a13834265902": {
+      "name": "Denoise",
+      "label": "advanced",
+      "description": "How strongly to redraw the latent.",
+      "expression": {
+        "value": {
+          "immediate": "1",
+          "type": "strength"
+        }
+      },
+      "folded": true
+    },
+    "dccc7e47-7a18-4fb3-92d9-4797765211f9": {
+      "name": "Sample Latents",
+      "label": "advanced",
+      "description": "Generate the image latents.",
+      "expression": {
+        "method": "KSampler",
+        "args": {
+          "model": "4560e36e-6ec8-4a40-b92e-693218cc89e5",
+          "positive": "509a02c6-2da2-4714-bc9d-f8fc34696d23",
+          "negative": "83032078-db88-4301-8587-d9561976bbee",
+          "latent_image": "be1ad4af-70ff-47d2-93d1-376397703558",
+          "seed": "753fb4ed-0aa7-408d-a96f-719b5d4743cb",
+          "steps": "12d934eb-0189-465e-8971-244ee8921b99",
+          "cfg": "0a4b886d-02ea-4c5c-b091-1a44e0e310d0",
+          "sampler_name": "78f83952-830b-401e-a314-1ffbfed333bd",
+          "scheduler": "f001d6e6-907c-405e-9dea-4b1c74a1229c",
+          "denoise": "e5533f25-df9b-4c0b-b92b-a13834265902"
+        }
+      },
+      "folded": true
+    },
+    "05888a39-c280-41a9-a6a2-a9edf6caafe8": {
+      "name": "Image",
+      "label": "basic",
+      "description": "Generated image.",
+      "tags": [
+        "view:output"
+      ],
+      "expression": {
+        "method": "VAEDecode",
+        "args": {
+          "samples": "dccc7e47-7a18-4fb3-92d9-4797765211f9",
+          "vae": "ce35808a-6c55-4991-8104-17bead7d3edc"
+        }
+      },
+      "folded": true
+    }
+  },
+  "name": "z-image turbo copy",
+  "tags": [
+    "quality:5",
+    "speed:5"
+  ],
+  "comment": "",
+  "mainTag": "library",
+  "default": false,
+  "collapsed": true,
+  "mtime": 1782440928412,
+  "external": true
+}
