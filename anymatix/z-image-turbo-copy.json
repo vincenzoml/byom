@@ -7,127 +7,128 @@
       "tags": [
         "view:toolbar"
       ],
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "square_768",
           "type": "start_resolution_preset"
         }
-      },
-      "folded": true
+      }
     },
     "cb5453b8-38e4-40af-b24f-b3f6d8f1adb4": {
       "name": "square_512 width",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "512",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "d8fecb4c-b163-4249-a202-bd38b89264ed": {
       "name": "square_512 height",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "512",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "b7cf50dc-179f-449c-8fcb-ac5d5fcefb33": {
       "name": "square_768 width",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "768",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "3388f30d-ab4c-4f04-af06-7a60f2eb574c": {
       "name": "square_768 height",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "768",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "e81e63ce-6ffc-4cc4-bfe5-aaf6d29b4732": {
       "name": "landscape_768_512 width",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "768",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "44016b67-c6d6-402a-942b-88f3a462bfc5": {
       "name": "landscape_768_512 height",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "512",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "c5dfc4ba-b312-4208-ba56-c9c8f2a92b7a": {
       "name": "portrait_512_768 width",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "512",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "f7342c67-7337-4c92-b766-b4f8b6706744": {
       "name": "portrait_512_768 height",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "768",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "6787211d-da0b-4097-990b-a5f8dca907e8": {
       "name": "square_1024 width",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "1024",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "d8840cdb-fb4b-4001-979e-203372660955": {
       "name": "square_1024 height",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "1024",
           "type": "resolution"
         }
-      },
-      "folded": true
+      }
     },
     "a0bd7f88-dc92-4666-903b-791af2b4df2e": {
       "name": "Is Square 512 Preset",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "ValueEquals",
         "args": {
@@ -139,12 +140,12 @@
             }
           }
         }
-      },
-      "folded": true
+      }
     },
     "4b8d50f7-972c-4927-bc35-23cbad1c237f": {
       "name": "Is Square 768 Preset",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "ValueEquals",
         "args": {
@@ -156,12 +157,12 @@
             }
           }
         }
-      },
-      "folded": true
+      }
     },
     "c73a7d1d-1b4e-4da9-b410-beecbd992e94": {
       "name": "Is Landscape 768 512 Preset",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "ValueEquals",
         "args": {
@@ -173,12 +174,12 @@
             }
           }
         }
-      },
-      "folded": true
+      }
     },
     "f58ddec4-155a-46d2-94b7-9c0f905f98b6": {
       "name": "Is Portrait 512 768 Preset",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "ValueEquals",
         "args": {
@@ -190,12 +191,12 @@
             }
           }
         }
-      },
-      "folded": true
+      }
     },
     "0d570c4f-5c5a-4a05-b9a7-97cec264066e": {
       "name": "Select width (portrait_512_768)",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "Selector",
         "args": {
@@ -203,12 +204,12 @@
           "on_false": "6787211d-da0b-4097-990b-a5f8dca907e8",
           "on_true": "c5dfc4ba-b312-4208-ba56-c9c8f2a92b7a"
         }
-      },
-      "folded": true
+      }
     },
     "04514916-d863-410f-af70-0bf4d890713e": {
       "name": "Select height (portrait_512_768)",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "Selector",
         "args": {
@@ -216,12 +217,12 @@
           "on_false": "d8840cdb-fb4b-4001-979e-203372660955",
           "on_true": "f7342c67-7337-4c92-b766-b4f8b6706744"
         }
-      },
-      "folded": true
+      }
     },
     "9ff8edb7-833c-4d60-aa7a-8eaa8babc787": {
       "name": "Select width (landscape_768_512)",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "Selector",
         "args": {
@@ -229,12 +230,12 @@
           "on_false": "0d570c4f-5c5a-4a05-b9a7-97cec264066e",
           "on_true": "e81e63ce-6ffc-4cc4-bfe5-aaf6d29b4732"
         }
-      },
-      "folded": true
+      }
     },
     "9957c26d-59bb-436c-a4f2-95e3ec278e13": {
       "name": "Select height (landscape_768_512)",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "Selector",
         "args": {
@@ -242,12 +243,12 @@
           "on_false": "04514916-d863-410f-af70-0bf4d890713e",
           "on_true": "44016b67-c6d6-402a-942b-88f3a462bfc5"
         }
-      },
-      "folded": true
+      }
     },
     "1868edd9-50cb-4d2f-b762-f3507e9ca6cf": {
       "name": "Select width (square_768)",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "Selector",
         "args": {
@@ -255,12 +256,12 @@
           "on_false": "9ff8edb7-833c-4d60-aa7a-8eaa8babc787",
           "on_true": "b7cf50dc-179f-449c-8fcb-ac5d5fcefb33"
         }
-      },
-      "folded": true
+      }
     },
     "4b539298-58e0-485e-be75-42d73ef3566c": {
       "name": "Select height (square_768)",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "Selector",
         "args": {
@@ -268,117 +269,116 @@
           "on_false": "9957c26d-59bb-436c-a4f2-95e3ec278e13",
           "on_true": "3388f30d-ab4c-4f04-af06-7a60f2eb574c"
         }
-      },
-      "folded": true
+      }
     },
     "baa8c6e9-8788-458e-a449-8b77adc5c707": {
       "name": "CLIP URL",
       "label": "advanced",
       "description": "Text encoder download URL.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
           "type": "url/text_encoders"
         }
-      },
-      "folded": true
+      }
     },
     "827e3e53-5882-4b4b-b9cb-4cea487e3112": {
       "name": "Fetch CLIP",
       "label": "advanced",
       "description": "Download the text encoder.",
+      "folded": true,
       "expression": {
         "method": "AnymatixFetcher",
         "args": {
           "url": "baa8c6e9-8788-458e-a449-8b77adc5c707"
         }
-      },
-      "folded": true
+      }
     },
     "ea6ef532-cb7a-463d-97dc-84a78ad00c51": {
       "name": "Load CLIP",
       "label": "advanced",
       "description": "Load the text encoder.",
+      "folded": true,
       "expression": {
         "method": "AnymatixCLIPLoader",
         "args": {
           "clip_name": "827e3e53-5882-4b4b-b9cb-4cea487e3112"
         }
-      },
-      "folded": true
+      }
     },
     "5ba0a73f-fe7a-4522-a59d-1aa4fdd8b07f": {
       "name": "VAE URL",
       "label": "advanced",
       "description": "VAE download URL.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
           "type": "url/vae"
         }
-      },
-      "folded": true
+      }
     },
     "a952148e-d1fe-4b2d-9058-e9ea43f6d612": {
       "name": "Fetch VAE",
       "label": "advanced",
       "description": "Download the VAE.",
+      "folded": true,
       "expression": {
         "method": "AnymatixFetcher",
         "args": {
           "url": "5ba0a73f-fe7a-4522-a59d-1aa4fdd8b07f"
         }
-      },
-      "folded": true
+      }
     },
     "40fc0fd5-14d0-473a-984d-079e8deef9ec": {
       "name": "Load VAE",
       "label": "advanced",
       "description": "Load the VAE.",
+      "folded": true,
       "expression": {
         "method": "AnymatixVAELoader",
         "args": {
           "vae_name": "a952148e-d1fe-4b2d-9058-e9ea43f6d612"
         }
-      },
-      "folded": true
+      }
     },
     "da80375c-21a9-46bf-9389-46522b5f47cb": {
       "name": "Prompt",
       "label": "basic",
       "description": "Describe the image to create.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "Glitch art paradigmatic nonsensical diagrammatic metaphysical rethorics",
           "type": "text"
         }
-      },
-      "folded": true
+      }
     },
     "4337b951-a934-4c7b-a279-2ec00fe34c1d": {
       "name": "Encode Prompt",
       "label": "advanced",
       "description": "Encode the prompt for sampling.",
+      "folded": true,
       "expression": {
         "method": "CLIPTextEncode",
         "args": {
           "text": "da80375c-21a9-46bf-9389-46522b5f47cb",
           "clip": "ea6ef532-cb7a-463d-97dc-84a78ad00c51"
         }
-      },
-      "folded": true
+      }
     },
     "87a1ddff-274f-4a81-bc9d-63a41548e860": {
       "name": "Conditioning Zero Out",
       "label": "advanced",
       "description": "Create empty negative conditioning.",
+      "folded": true,
       "expression": {
         "method": "ConditioningZeroOut",
         "args": {
           "conditioning": "4337b951-a934-4c7b-a279-2ec00fe34c1d"
         }
-      },
-      "folded": true
+      }
     },
     "c69f267f-5a5d-4037-b8cd-b9d949099320": {
       "name": "Model URL",
@@ -387,41 +387,42 @@
       "tags": [
         "base:z-image"
       ],
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors",
           "type": "url/diffusion_model"
         }
-      },
-      "folded": true
+      }
     },
     "be11fda5-bb82-4031-be3d-e8eead39c17a": {
       "name": "Fetch Model",
       "label": "advanced",
       "description": "Download the diffusion model.",
+      "folded": true,
       "expression": {
         "method": "AnymatixFetcher",
         "args": {
           "url": "c69f267f-5a5d-4037-b8cd-b9d949099320"
         }
-      },
-      "folded": true
+      }
     },
     "5f1a303e-0e25-4e69-a83c-51c566cb2206": {
       "name": "Load Model",
       "label": "advanced",
       "description": "Load the diffusion model.",
+      "folded": true,
       "expression": {
         "method": "AnymatixUNETLoader",
         "args": {
           "unet_name": "be11fda5-bb82-4031-be3d-e8eead39c17a"
         }
-      },
-      "folded": true
+      }
     },
     "c9c23eba-bf47-4745-9f27-0f563c669bf1": {
       "name": "Width",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "Selector",
         "args": {
@@ -429,12 +430,12 @@
           "on_false": "1868edd9-50cb-4d2f-b762-f3507e9ca6cf",
           "on_true": "cb5453b8-38e4-40af-b24f-b3f6d8f1adb4"
         }
-      },
-      "folded": true
+      }
     },
     "3f54660b-07b5-4b62-a360-a9ec670b066f": {
       "name": "Height",
       "label": "hidden",
+      "folded": true,
       "expression": {
         "method": "Selector",
         "args": {
@@ -442,25 +443,25 @@
           "on_false": "4b539298-58e0-485e-be75-42d73ef3566c",
           "on_true": "d8fecb4c-b163-4249-a202-bd38b89264ed"
         }
-      },
-      "folded": true
+      }
     },
     "7d2fdc1c-2b99-4773-957a-c9e7c88dcac3": {
       "name": "Batch Size",
       "label": "advanced",
       "description": "Number of images to generate.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "1",
           "type": "count"
         }
-      },
-      "folded": true
+      }
     },
     "b68a4df8-3100-4177-be15-574a9603a5a9": {
       "name": "Empty SD3 Latent Image",
       "label": "advanced",
       "description": "Create the starting latent image.",
+      "folded": true,
       "expression": {
         "method": "EmptySD3LatentImage",
         "args": {
@@ -468,110 +469,110 @@
           "height": "3f54660b-07b5-4b62-a360-a9ec670b066f",
           "batch_size": "7d2fdc1c-2b99-4773-957a-c9e7c88dcac3"
         }
-      },
-      "folded": true
+      }
     },
     "d433f56c-979b-4213-8596-81cf1e72f4a1": {
       "name": "Shift",
       "label": "advanced",
       "description": "Sampling shift for this model.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "3",
           "type": "number"
         }
-      },
-      "folded": true
+      }
     },
     "5e10be5c-f126-4a29-a8fc-dd7f61eea470": {
       "name": "Apply Model Sampling",
       "label": "advanced",
       "description": "Apply model-specific sampling settings.",
+      "folded": true,
       "expression": {
         "method": "ModelSamplingAuraFlow",
         "args": {
           "model": "5f1a303e-0e25-4e69-a83c-51c566cb2206",
           "shift": "d433f56c-979b-4213-8596-81cf1e72f4a1"
         }
-      },
-      "folded": true
+      }
     },
     "8e8da47a-0853-48dd-a784-0ec1270786b1": {
       "name": "Seed",
       "label": "config",
       "description": "Controls random variation.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "4066275459",
           "type": "seed"
         }
-      },
-      "folded": true
+      }
     },
     "c29fa2b8-f4a4-4925-b03d-ce5d090c1868": {
       "name": "Steps",
       "label": "config",
       "description": "Number of sampling steps.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "9",
           "type": "count"
         }
-      },
-      "folded": true
+      }
     },
     "c01f66d7-920b-43a7-a18f-5571a997562a": {
       "name": "Guidance",
       "label": "advanced",
       "description": "Prompt guidance strength.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "1",
           "type": "cfg"
         }
-      },
-      "folded": true
+      }
     },
     "22b97bb9-084c-469a-b1e1-0c228441a990": {
       "name": "Sampler",
       "label": "advanced",
       "description": "Sampling algorithm.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "res_multistep",
           "type": "sampler"
         }
-      },
-      "folded": true
+      }
     },
     "add46bf8-d04c-4eb1-921b-49d0dca4637c": {
       "name": "Scheduler",
       "label": "advanced",
       "description": "Sampling schedule.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "simple",
           "type": "scheduler"
         }
-      },
-      "folded": true
+      }
     },
     "b51c1cc7-b79b-4e2e-8edb-451710549231": {
       "name": "Denoise",
       "label": "advanced",
       "description": "How strongly to redraw the latent.",
+      "folded": true,
       "expression": {
         "value": {
           "immediate": "1",
           "type": "strength"
         }
-      },
-      "folded": true
+      }
     },
     "c75f9bcb-0c19-45d9-ab9c-be8ea9748844": {
       "name": "Sample Latents",
       "label": "advanced",
       "description": "Generate the image latents.",
+      "folded": true,
       "expression": {
         "method": "KSampler",
         "args": {
@@ -586,8 +587,7 @@
           "scheduler": "add46bf8-d04c-4eb1-921b-49d0dca4637c",
           "denoise": "b51c1cc7-b79b-4e2e-8edb-451710549231"
         }
-      },
-      "folded": true
+      }
     },
     "e902fb29-1aaf-4984-b13c-3256135d3029": {
       "name": "Image",
@@ -596,14 +596,14 @@
       "tags": [
         "view:output"
       ],
+      "folded": true,
       "expression": {
         "method": "VAEDecode",
         "args": {
           "samples": "c75f9bcb-0c19-45d9-ab9c-be8ea9748844",
           "vae": "40fc0fd5-14d0-473a-984d-079e8deef9ec"
         }
-      },
-      "folded": true
+      }
     }
   },
   "name": "z-image turbo copy",
